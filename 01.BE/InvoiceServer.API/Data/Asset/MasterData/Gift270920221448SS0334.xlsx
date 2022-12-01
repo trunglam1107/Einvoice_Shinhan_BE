@@ -1,0 +1,107 @@
+from invoice in invoices
+                                
+                                join minvoicedata in this.context.Set<MINVOICE_DATA>()
+                                on invoice.MESSAGECODE equals minvoicedata.MESSAGECODE into minvoicedatas
+                                from minvoicedata in minvoicedatas.DefaultIfEmpty()
+                                join client in clients
+                                on invoice.CLIENTID equals client.ID
+                                join registerTemplate in this.context.Set<REGISTERTEMPLATE>()
+                                on invoice.REGISTERTEMPLATEID equals registerTemplate.ID
+                                join invoiceSample in this.context.Set<INVOICESAMPLE>()
+                                on registerTemplate.INVOICESAMPLEID equals invoiceSample.ID
+                                join currency in this.context.Set<CURRENCY>()
+                                on invoice.CURRENCYID equals currency.ID
+                                
+                                join invoiceParent in this.context.Set<INVOICE>()
+                                on invoice.PARENTID equals invoiceParent.ID into invoiceParents
+                                from invoiceParent in invoiceParents.DefaultIfEmpty()
+                                join announcement in this.context.Set<ANNOUNCEMENT>()
+                                 on invoiceParent.ID equals announcement.INVOICEID into announcements
+                                from announcement in announcements.DefaultIfEmpty()
+                                join announcement2 in this.context.Set<ANNOUNCEMENT>()
+                                on invoice.ID equals announcement2.INVOICEID into announcement2s
+                                from announcement2 in announcement2s.DefaultIfEmpty()
+                                join mycompany in this.context.Set<MYCOMPANY>()
+                                on invoice.COMPANYID equals mycompany.COMPANYSID
+                                where !invoice.CUSTOMERTAXCODE.Equals("88888888") || !invoice.CUSTOMERTAXCODE.Equals("9999999999")
+                                && mycompany.COMPANYID == condition.Branch
+                                select new ReportInvoiceDetail
+                                {
+                                    Id = invoice.ID,
+                                    CustomerCode = client.CUSTOMERCODE,
+                                    CustomerName = invoice.CUSTOMERNAME,
+                                    PersonContact = invoice.PERSONCONTACT,
+                                    Address = invoice.CUSTOMERADDRESS,
+                                    TaxCode = invoice.CUSTOMERTAXCODE,
+                                    Created = invoice.CREATEDDATE,
+                                    InvoiceCode = registerTemplate.CODE,
+                                    InvoiceSymbol = invoice.SYMBOL,
+                                    InvoiceNo = invoice.NO,
+                                    TotalAmount = (invoiceDetail.TOTAL ?? 0),
+                                    TaxName = tax.NAME,
+                                    ReleasedDate = invoice.RELEASEDDATE,
+                                    AmountTax = (invoiceDetail.AMOUNTTAX ?? 0),
+                                    TotalDiscount = (invoiceDetail.AMOUNTDISCOUNT ?? 0),
+                                    TotalDiscountTax = (invoice.TOTALDISCOUNTTAX ?? 0),
+                                    Sum = (invoiceDetail.TOTAL ?? 0) + (invoiceDetail.AMOUNTTAX ?? 0),
+                                    IsMultiTax = invoiceSample.ISMULTITAX,
+                                    Currency = currency.CODE, //add currency
+                                    ProductName = invoiceDetail.PRODUCTNAME,
+                                    Unit = invoiceDetail.UNITNAME,
+                                    Quantity = invoiceDetail.QUANTITY,
+                                    IsOrg = client.ISORG ?? false,
+                                    InvoiceType = (invoice.INVOICESTATUS == 5 || invoice.INVOICESTATUS == 7) ? 1 : invoice.INVOICETYPE == null ? 0 : invoice.INVOICETYPE == 2 ? 2 : invoice.INVOICETYPE == 1 ? 3 : invoice.INVOICETYPE == 3 ? 4 : invoice.INVOICETYPE,
+                                    ParentSymbol = invoiceParent.NO != null ? invoiceParent.SYMBOL + ", " : null,
+                                    ParentNo = invoiceParent.NO != null ? invoiceParent.NO : null,
+                                    ParentCode = invoiceParent.NO != null ? invoiceParent.SYMBOL.Substring(0, 1) + ", " : null,
+                                    Note = invoice.INVOICETYPE != 1 ? (invoice.INVOICESTATUS == 5 || invoice.INVOICESTATUS == 7) ? announcement2.REASION : invoice.INVOICETYPE == 3 ? announcement2.REASION : announcement.REASION : null,
+                                    SendCQT = minvoicedata.STATUS,
+                                    MessageCode = minvoicedata.MESSAGECODE,
+                                    InvoiceNo2 = invoice.INVOICENO,
+                                    InvoiceDetailId = invoiceDetail.ID,
+                                    CurrencyExchangeRate = (invoice.CURRENCYEXCHANGERATE ?? 1),
+                                    Total = (invoice.TOTAL ?? 0),
+                                    TotalTax = (invoice.TOTALTAX ?? 0),
+                                    SumAmountInvoice = (invoice.SUM ?? 0),
+                                    CompanyId = mycompany.COMPANYID
+                                }).ToList();
+								
+								invoiceInfos = invoiceInfos.GroupBy(x => new { x.Id }).Select(group => new ReportInvoiceDetail
+                {
+                    Id = group.FirstOrDefault().Id,
+                    CustomerCode = group.FirstOrDefault().CustomerCode,
+                    CustomerName = group.FirstOrDefault().CustomerName,
+                    PersonContact = group.FirstOrDefault().PersonContact,
+                    Address = group.FirstOrDefault().Address,
+                    TaxCode = group.FirstOrDefault().TaxCode,
+                    Created = group.FirstOrDefault().Created,
+                    InvoiceCode = group.FirstOrDefault().InvoiceCode,
+                    InvoiceSymbol = group.FirstOrDefault().InvoiceSymbol,
+                    InvoiceNo = group.FirstOrDefault().InvoiceNo,
+                    TotalAmount = group.Sum(x => x.TotalAmount),
+                    TaxName = group.FirstOrDefault().TaxName,
+                    ReleasedDate = group.FirstOrDefault().ReleasedDate,
+                    AmountTax = group.Sum(x => x.AmountTax),
+                    TotalDiscount = group.Sum(x => x.TotalDiscount),
+                    TotalDiscountTax = group.Sum(x => x.TotalDiscountTax),
+                    Sum = group.Sum(x => x.Sum),
+                    IsMultiTax = group.FirstOrDefault().IsMultiTax,
+                    Currency = group.FirstOrDefault().Currency, //add currency
+                    ProductName = group.Count() == 1 ? group.FirstOrDefault().ProductName : null,
+                    Unit = group.Count() == 1 ? group.FirstOrDefault().Unit : null,
+                    Quantity = group.Count() == 1 ? group.FirstOrDefault().Quantity : null,
+                    IsOrg = group.FirstOrDefault().IsOrg,
+                    InvoiceType = group.FirstOrDefault().InvoiceType,
+                    ParentSymbol = group.FirstOrDefault().ParentSymbol,
+                    ParentNo = group.FirstOrDefault().ParentNo,
+                    ParentCode = group.FirstOrDefault().ParentCode,
+                    Note = group.FirstOrDefault().Note,
+                    SendCQT = group.FirstOrDefault().SendCQT,
+                    MessageCode = group.FirstOrDefault().MessageCode,
+                    InvoiceNo2 = group.FirstOrDefault().InvoiceNo2,
+                    InvoiceDetailId = group.FirstOrDefault().InvoiceDetailId,
+                    CurrencyExchangeRate = group.FirstOrDefault().CurrencyExchangeRate,
+                    Total = group.FirstOrDefault().Total,
+                    TotalTax = group.FirstOrDefault().TotalTax,
+                    SumAmountInvoice = group.FirstOrDefault().SumAmountInvoice
+                }).ToList();

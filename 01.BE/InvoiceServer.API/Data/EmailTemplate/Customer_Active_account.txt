@@ -1,0 +1,53 @@
+﻿{BankName} – Welcome to E-invoice system
+		<table class="tableHeader" style="width:650px; height:62px; border-bottom: 1px solid;">
+			<tr>
+				<td>
+					<img src='$logo' class="logoMail" width="167" style="width:167px; height:auto">
+				</td>
+				<td style="font-size: 12px;font-style: italic;text-align: right;">
+					<span >
+						{BankAddress}
+					</span>
+					<br>
+					<span >
+						{BankAddressEn}
+					</span>
+				</td>
+			</tr>
+		</table><br>
+		<b style ="font-size: 13px">Kính gửi Quý khách hàng,</b><br>
+		<p style ="font-size: 13px">Ngân hàng {BankName} chào mừng Quý khách đến với Hệ thống Hóa đơn điện tử.</p>
+		<span>Tài khoản: $UserId</span>
+		<br>
+		<span>Mật khẩu: <b style="color: blue">$Password</b></span>
+		<br><br>
+		<div style="width:650px;>
+		<span style ="font-size: 13px">Thông tin trên được sử dụng cho việc truy cập hệ thống và thực hiện các thao tác về hóa đơn điện tử. </span>	<br>
+		<span style ="font-size: 13px">Quý khách có nhu cầu thay đổi mật khẩu hoặc cập nhật địa chỉ e-mail nhận hóa đơn điện tử, </span> <br>
+		<span style ="font-size: 13px">xin vui lòng thao tác tại <a class ="colorBlue" style="color:#00529b" href="$linkPortal#/Login" >{linkPortalShow}#/Login. </a> <span/><br>
+		</div><br>
+		<span style ="font-size: 13px">Trong trường hợp cần thêm sự hỗ trợ, Quý khách vui lòng liên hệ trung tâm dịch vụ khách hàng của Ngân hàng: {BankPhone}. <span/> <br>
+		<p style ="font-size: 13px">Trân trọng,<p/>
+		<b class="Italic" style="font-style:italic;font-size: 13px">Ngân hàng {Tnhh}{BankName}</b>
+		
+
+		<p class="line" style="width:650px;border-top: 1px solid black;">&nbsp;</p>
+		<b style ="font-size: 13px;">Dear Valued Customer, </b>
+		<p style ="font-size: 13px">Welcome to {BankNameEn} E-invoice system.</p>
+		<span>Account: $UserId</span>
+		<br>
+		<span>Log in password: <b style="color: blue">$Password</b></span>
+		<br><br>
+		<span style ="font-size: 13px">You can use this information to access and perform e-invoice operations. </span><br>
+		<span style ="font-size: 13px">If you need to change to a new password or amend the email address for receiving e-invoices, </span><br>
+		<span style ="font-size: 13px">please visit <a class ="colorBlue" style="color:#00529b" href="$linkPortal#/Login" >{linkPortalShow}#/Login. </a> <span/><br><br>
+		<span style ="font-size: 13px">For further support from {BankNameEn}, please contact us via our Call Center:{BankPhone}.<span/> <br> 
+		<p style ="font-size: 13px">Best regards,<p/>
+		<b class="Italic" style="font-style:italic; font-size: 13px">{BankNameEn}</b>
+		<br>
+		
+		<div class="Desc" style="width:650px; background-color: #fdf4ef; padding: 8px; font-size: 12px">
+			<p>Thư điện tử này được gửi ra từ hệ thống tự động, Quý khách vui lòng không trả lời thư điện tử này. Thư điện tử này cùng các tài liệu đính kèm chỉ dành cho một hoặc các cá nhân, tổ chức cụ thể. Nếu Quý khách không phải là người nhận được chỉ định, Quý khách vui lòng xóa thư này đồng thời gọi Tổng đài {BankPhone} để thông báo cho người gửi.</p>
+			<p class="Italic" style="font-style: italic">This is an auto-generated email, please do not reply to this email. This e-mail and any attachment to it is only for the usesage of the intended recipient. If you are not the addressee, please delete it immediately and notify the sender by call our Contact Center {BankPhone}.</p>
+		</div>
+	</div>

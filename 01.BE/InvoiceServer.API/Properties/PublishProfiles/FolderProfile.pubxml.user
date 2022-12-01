@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Deploy\APIShinhan</_PublishTargetUrl>
+    <History>False|2022-08-18T01:38:45.4373746Z;True|2022-08-16T15:29:44.7413004+07:00;True|2022-08-16T15:20:41.7325269+07:00;True|2022-08-16T15:19:10.0344496+07:00;True|2022-08-16T14:36:13.5873952+07:00;True|2022-08-16T14:08:27.0946915+07:00;True|2022-08-16T13:18:08.9320528+07:00;True|2022-08-16T10:58:41.6481274+07:00;True|2022-08-16T10:17:10.0911751+07:00;True|2022-08-15T17:30:40.4602066+07:00;True|2022-08-15T17:30:28.8823372+07:00;True|2022-08-15T16:16:59.1972412+07:00;True|2022-08-15T15:55:00.2368087+07:00;True|2022-08-11T15:20:14.8077349+07:00;True|2022-08-02T16:49:38.3422601+07:00;True|2022-08-02T15:57:22.3520144+07:00;True|2022-08-02T11:16:08.5717364+07:00;True|2022-08-02T10:52:58.7189855+07:00;True|2022-08-02T10:49:09.5069167+07:00;True|2022-08-02T10:40:40.5176212+07:00;True|2022-08-01T16:09:36.4024854+07:00;True|2022-08-01T15:13:50.7921485+07:00;True|2022-08-01T13:42:08.3782083+07:00;True|2022-07-28T14:05:11.0889092+07:00;True|2022-07-28T10:48:22.5993814+07:00;True|2022-07-27T18:41:45.8916488+07:00;True|2022-07-27T18:36:58.6486331+07:00;True|2022-07-27T18:16:29.7970626+07:00;True|2022-07-27T18:14:56.6118081+07:00;True|2022-07-27T18:05:32.0225474+07:00;True|2022-07-27T17:38:28.5258329+07:00;True|2022-07-27T17:33:53.6078153+07:00;True|2022-07-27T17:08:58.0813520+07:00;True|2022-07-27T10:08:12.1339187+07:00;True|2022-07-27T08:59:36.1940942+07:00;True|2022-07-26T17:06:18.9618213+07:00;True|2022-07-26T16:06:56.7828964+07:00;True|2022-07-26T15:26:55.8001155+07:00;True|2022-07-26T14:20:39.1238070+07:00;True|2022-07-25T19:06:58.4789993+07:00;True|2022-07-25T18:48:03.6790757+07:00;True|2022-07-25T18:34:51.5444648+07:00;True|2022-07-25T17:36:10.9151740+07:00;True|2022-07-25T17:26:38.2500630+07:00;True|2022-07-25T17:25:52.4503170+07:00;True|2022-07-25T17:21:18.3009599+07:00;True|2022-07-25T16:15:23.4963356+07:00;True|2022-07-25T16:03:20.2683461+07:00;True|2022-07-14T08:57:35.9414091+07:00;True|2022-07-13T16:47:41.5596421+07:00;True|2022-07-13T15:34:13.9021762+07:00;True|2022-07-13T11:38:45.9815701+07:00;True|2022-07-13T11:03:59.1967873+07:00;True|2022-07-13T10:36:29.8413828+07:00;True|2022-07-13T09:32:10.3051965+07:00;True|2022-07-06T11:04:09.3456171+07:00;True|2022-07-06T10:43:45.7402810+07:00;True|2022-07-06T10:33:18.2234907+07:00;True|2022-07-06T10:18:54.2219993+07:00;True|2022-07-06T10:14:31.1191461+07:00;True|2022-07-06T10:13:04.0204591+07:00;True|2022-07-06T10:11:29.7009778+07:00;True|2022-07-06T09:26:42.6782989+07:00;True|2022-07-05T18:55:17.0663527+07:00;True|2022-07-05T16:44:37.1925492+07:00;True|2022-07-05T16:21:31.4591879+07:00;True|2022-07-05T14:17:48.4549918+07:00;True|2022-07-05T08:47:27.8732764+07:00;True|2022-07-05T08:21:19.2814731+07:00;True|2022-07-04T22:23:17.9950946+07:00;True|2022-07-04T22:22:44.3353276+07:00;True|2022-07-04T21:25:19.5663378+07:00;False|2022-07-04T21:24:26.6010982+07:00;False|2022-07-04T21:22:44.6007342+07:00;True|2022-07-04T21:06:20.7675054+07:00;True|2022-07-04T21:05:37.4551616+07:00;True|2022-07-04T21:02:54.1071799+07:00;True|2022-07-04T20:35:32.8579953+07:00;True|2022-07-04T20:35:26.3173721+07:00;True|2022-07-04T20:35:10.8890919+07:00;True|2022-07-04T19:54:09.6022703+07:00;True|2022-07-04T19:39:29.3404431+07:00;True|2022-07-04T18:39:59.4680848+07:00;True|2022-07-04T18:27:16.5689185+07:00;True|2022-07-04T15:54:59.5018110+07:00;True|2022-07-04T15:54:44.8385828+07:00;True|2022-07-04T15:49:40.4001809+07:00;True|2022-07-04T15:44:37.2616480+07:00;True|2022-07-04T13:07:33.4497992+07:00;True|2022-07-04T11:50:58.0728097+07:00;True|2022-07-04T10:25:18.1446024+07:00;True|2022-07-04T10:08:03.6975525+07:00;True|2022-07-04T10:02:36.3722536+07:00;True|2022-07-04T10:01:51.1459819+07:00;True|2022-07-04T10:01:09.1895959+07:00;True|2022-07-01T22:06:11.2687629+07:00;True|2022-07-01T20:39:53.0489289+07:00;True|2022-07-01T20:20:42.5912406+07:00;True|2022-07-01T20:20:34.7484247+07:00;True|2022-07-01T13:41:58.8046062+07:00;True|2022-07-01T08:46:26.5533794+07:00;True|2022-06-30T18:48:41.0358657+07:00;False|2022-06-30T18:47:19.4363769+07:00;False|2022-06-30T18:44:48.9611284+07:00;True|2022-06-30T18:03:06.9770139+07:00;True|2022-06-30T17:38:07.8594646+07:00;True|2022-06-30T17:23:45.9645089+07:00;True|2022-06-30T17:02:27.4486825+07:00;True|2022-06-30T16:40:51.8077546+07:00;True|2022-06-30T16:20:39.5727090+07:00;True|2022-06-30T15:12:15.3012125+07:00;True|2022-06-30T10:55:11.1744850+07:00;True|2022-06-30T10:42:14.1294630+07:00;True|2022-06-30T09:23:05.8606481+07:00;True|2022-06-29T18:09:07.4288641+07:00;True|2022-06-29T18:07:10.9384785+07:00;True|2022-06-29T17:36:03.6086773+07:00;True|2022-06-29T17:02:01.4302057+07:00;True|2022-06-29T15:59:10.6658570+07:00;True|2022-06-29T15:27:01.7893897+07:00;True|2022-06-29T14:06:23.6684422+07:00;True|2022-06-29T13:21:53.3705447+07:00;True|2022-06-29T09:41:52.9394251+07:00;True|2022-06-29T08:44:51.7960546+07:00;True|2022-06-28T18:35:29.1201888+07:00;True|2022-06-28T17:48:11.2254140+07:00;True|2022-06-28T17:41:23.6890964+07:00;True|2022-06-28T15:22:21.3565961+07:00;True|2022-06-28T15:00:55.0925949+07:00;True|2022-06-28T14:50:02.1906178+07:00;True|2022-06-28T14:41:16.3034886+07:00;True|2022-06-28T11:45:25.9964981+07:00;True|2022-06-28T11:09:06.2769554+07:00;True|2022-06-28T10:58:02.4921029+07:00;True|2022-06-28T10:46:45.5924661+07:00;True|2022-06-28T10:14:01.9385587+07:00;True|2022-06-28T09:06:56.0144710+07:00;True|2022-06-27T19:32:59.7614250+07:00;True|2022-06-27T19:32:01.2382718+07:00;True|2022-06-27T19:24:40.0184443+07:00;True|2022-06-27T18:06:21.2093364+07:00;True|2022-06-27T18:01:08.0056733+07:00;True|2022-06-27T17:49:10.4932699+07:00;True|2022-06-27T17:48:41.4696030+07:00;True|2022-06-27T17:28:19.1299837+07:00;True|2022-06-27T16:26:56.2288428+07:00;True|2022-06-27T16:26:14.4021042+07:00;True|2022-06-27T16:00:25.7225622+07:00;True|2022-06-27T15:51:49.7791060+07:00;True|2022-06-27T15:21:04.5892430+07:00;True|2022-06-27T15:16:52.8870339+07:00;True|2022-06-27T15:06:25.3466435+07:00;True|2022-06-27T14:32:25.2906599+07:00;True|2022-06-27T14:02:46.5610619+07:00;True|2022-06-27T13:57:58.8307231+07:00;True|2022-06-27T10:37:08.2989387+07:00;True|2022-06-27T10:22:07.2653959+07:00;True|2022-06-27T10:16:12.0261891+07:00;True|2022-06-27T09:55:55.8769201+07:00;True|2022-06-27T09:35:02.5379841+07:00;True|2022-06-27T09:04:58.5784007+07:00;True|2022-06-27T08:38:34.6961598+07:00;True|2022-06-24T20:52:46.6840579+07:00;True|2022-06-24T18:44:29.4320351+07:00;True|2022-06-24T18:06:45.9856007+07:00;True|2022-06-24T17:08:38.9795630+07:00;True|2022-06-24T16:26:39.1551547+07:00;True|2022-06-24T16:04:44.5878732+07:00;True|2022-06-24T15:28:30.8384817+07:00;True|2022-06-24T15:27:21.1069127+07:00;True|2022-06-24T14:38:56.0590393+07:00;True|2022-06-24T11:57:12.5572961+07:00;True|2022-06-24T11:48:04.7678898+07:00;True|2022-06-24T09:51:21.2774152+07:00;True|2022-06-24T09:17:41.3175322+07:00;True|2022-06-23T21:17:11.1238222+07:00;True|2022-06-23T19:57:44.6127433+07:00;True|2022-06-23T18:23:09.1418720+07:00;True|2022-06-23T18:11:22.6838594+07:00;True|2022-06-23T16:13:27.2988201+07:00;True|2022-06-23T15:59:12.3745837+07:00;True|2022-06-23T13:30:46.7106242+07:00;True|2022-06-23T11:44:38.1507977+07:00;True|2022-06-22T11:13:39.3485577+07:00;True|2022-06-22T10:49:53.9516886+07:00;True|2022-06-22T10:35:16.5485857+07:00;True|2022-06-22T10:21:45.7934308+07:00;True|2022-06-16T10:52:44.9948778+07:00;True|2022-06-16T10:33:37.7915027+07:00;True|2022-06-16T09:12:44.4382980+07:00;True|2022-06-16T09:01:39.0047892+07:00;True|2022-06-16T08:44:54.5796841+07:00;True|2022-06-14T13:11:54.8904601+07:00;True|2022-06-14T11:31:22.3827200+07:00;True|2022-06-13T09:23:55.7268582+07:00;True|2022-06-10T09:54:53.0091855+07:00;True|2022-06-06T15:00:54.2223000+07:00;True|2022-06-06T13:50:20.0877479+07:00;True|2022-06-06T13:44:51.9278765+07:00;True|2022-06-06T13:44:38.4456119+07:00;True|2022-06-06T13:39:52.3081219+07:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AppSettings/BIDC.config">
+      <publishTime>08/31/2020 11:27:14</publishTime>
+    </File>
+    <File Include="AppSettings/HuaNan.config">
+      <publishTime>08/31/2020 11:27:14</publishTime>
+    </File>
+    <File Include="AppSettings/Mega.config">
+      <publishTime>08/31/2020 11:27:14</publishTime>
+    </File>
+    <File Include="AppSettings/Shinhan.config">
+      <publishTime>07/27/2022 15:25:53</publishTime>
+    </File>
+    <File Include="AppSettings/Sino.config">
+      <publishTime>08/31/2020 11:27:14</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/BitMiracle.Docotic.Pdf.dll">
+      <publishTime>12/22/2018 23:11:18</publishTime>
+    </File>
+    <File Include="bin/BouncyCastle.Crypto.dll">
+      <publishTime>02/01/2019 02:53:56</publishTime>
+    </File>
+    <File Include="bin/Dapper.dll">
+      <publishTime>04/03/2015 09:31:54</publishTime>
+    </File>
+    <File Include="bin/Dapper.pdb">
+      <publishTime>04/03/2015 09:31:54</publishTime>
+    </File>
+    <File Include="bin/DocumentFormat.OpenXml.dll">
+      <publishTime>01/06/2018 08:25:34</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/23/2017 20:15:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/23/2017 20:15:20</publishTime>
+    </File>
+    <File Include="bin/es/Hangfire.Core.resources.dll">
+      <publishTime>09/19/2017 15:58:56</publishTime>
+    </File>
+    <File Include="bin/Hangfire.Core.dll">
+      <publishTime>09/19/2017 15:58:56</publishTime>
+    </File>
+    <File Include="bin/Hangfire.SqlServer.dll">
+      <publishTime>09/19/2017 15:58:58</publishTime>
+    </File>
+    <File Include="bin/HiQPdf.dep">
+      <publishTime>06/03/2022 18:55:38</publishTime>
+    </File>
+    <File Include="bin/HiQPdf.Free.dll">
+      <publishTime>06/03/2022 18:55:38</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>08/16/2018 00:16:34</publishTime>
+    </File>
+    <File Include="bin/InvoiceServer.API.dll">
+      <publishTime>08/22/2022 10:28:29</publishTime>
+    </File>
+    <File Include="bin/InvoiceServer.API.pdb">
+      <publishTime>08/22/2022 10:28:29</publishTime>
+    </File>
+    <File Include="bin/InvoiceServer.Business.dll">
+      <publishTime>08/22/2022 10:28:28</publishTime>
+    </File>
+    <File Include="bin/InvoiceServer.Business.dll.config">
+      <publishTime>05/18/2022 17:53:03</publishTime>
+    </File>
+    <File Include="bin/InvoiceServer.Business.pdb">
+      <publishTime>08/22/2022 10:28:28</publishTime>
+    </File>
+    <File Include="bin/InvoiceServer.Common.dll">
+      <publishTime>08/02/2022 17:22:53</publishTime>
+    </File>
+    <File Include="bin/InvoiceServer.Common.pdb">
+      <publishTime>08/02/2022 17:22:53</publishTime>
+    </File>
+    <File Include="bin/InvoiceServer.Data.dll">
+      <publishTime>08/22/2022 10:28:25</publishTime>
+    </File>
+    <File Include="bin/InvoiceServer.Data.dll.config">
+      <publishTime>08/15/2022 18:09:16</publishTime>
+    </File>
+    <File Include="bin/InvoiceServer.Data.pdb">
+      <publishTime>08/22/2022 10:28:25</publishTime>
+    </File>
+    <File Include="bin/InvoiceServer.GateWay.dll">
+      <publishTime>08/22/2022 10:28:29</publishTime>
+    </File>
+    <File Include="bin/InvoiceServer.GateWay.dll.config">
+      <publishTime>05/18/2022 17:52:54</publishTime>
+    </File>
+    <File Include="bin/InvoiceServer.GateWay.pdb">
+      <publishTime>08/22/2022 10:28:29</publishTime>
+    </File>
+    <File Include="bin/Ionic.Zip.dll">
+      <publishTime>11/22/2017 21:06:00</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>08/23/2017 00:39:42</publishTime>
+    </File>
+    <File Include="bin/MailKit.dll">
+      <publishTime>05/30/2020 22:42:12</publishTime>
+    </File>
+    <File Include="bin/MailKit.pdb">
+      <publishTime>05/30/2020 22:42:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.mshtml.dll">
+      <publishTime>04/29/2022 16:22:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>02/13/2015 20:16:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>02/13/2015 13:16:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 18:48:56</publishTime>
+    </File>
+    <File Include="bin/MimeKit.dll">
+      <publishTime>05/30/2020 18:01:30</publishTime>
+    </File>
+    <File Include="bin/MimeKit.pdb">
+      <publishTime>05/30/2020 18:01:30</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/14/2016 06:06:14</publishTime>
+    </File>
+    <File Include="bin/NLog.dll">
+      <publishTime>10/25/2015 05:43:34</publishTime>
+    </File>
+    <File Include="bin/NPOI.dll">
+      <publishTime>12/17/2018 19:15:12</publishTime>
+    </File>
+    <File Include="bin/NPOI.OOXML.dll">
+      <publishTime>12/17/2018 19:15:12</publishTime>
+    </File>
+    <File Include="bin/NPOI.OpenXml4Net.dll">
+      <publishTime>12/17/2018 19:15:12</publishTime>
+    </File>
+    <File Include="bin/NPOI.OpenXmlFormats.dll">
+      <publishTime>12/17/2018 19:15:12</publishTime>
+    </File>
+    <File Include="bin/Oracle.ManagedDataAccess.dll">
+      <publishTime>06/08/2022 14:08:14</publishTime>
+    </File>
+    <File Include="bin/Oracle.ManagedDataAccess.EntityFramework.dll">
+      <publishTime>06/08/2022 14:08:17</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/13/2012 19:19:34</publishTime>
+    </File>
+    <File Include="bin/Quartz.dll">
+      <publishTime>10/07/2018 19:27:38</publishTime>
+    </File>
+    <File Include="bin/Quartz.pdb">
+      <publishTime>10/07/2018 19:27:38</publishTime>
+    </File>
+    <File Include="bin/QuartzJob.dll">
+      <publishTime>08/12/2019 14:49:49</publishTime>
+    </File>
+    <File Include="bin/Renci.SshNet.dll">
+      <publishTime>10/17/2017 03:53:06</publishTime>
+    </File>
+    <File Include="bin/RestSharp.dll">
+      <publishTime>12/08/2021 21:02:42</publishTime>
+    </File>
+    <File Include="bin/Select.HtmlToPdf.dll">
+      <publishTime>05/18/2022 17:52:54</publishTime>
+    </File>
+    <File Include="bin/Spire.Barcode.dll">
+      <publishTime>05/16/2018 00:17:12</publishTime>
+    </File>
+    <File Include="bin/Spire.DataExport.dll">
+      <publishTime>05/16/2018 00:17:12</publishTime>
+    </File>
+    <File Include="bin/Spire.DataExport.ResourceMgr.dll">
+      <publishTime>05/16/2018 00:17:12</publishTime>
+    </File>
+    <File Include="bin/Spire.Doc.dll">
+      <publishTime>03/01/2019 09:36:00</publishTime>
+    </File>
+    <File Include="bin/Spire.DocViewer.Forms.dll">
+      <publishTime>05/16/2018 00:17:14</publishTime>
+    </File>
+    <File Include="bin/Spire.License.dll">
+      <publishTime>02/28/2019 08:54:06</publishTime>
+    </File>
+    <File Include="bin/Spire.Pdf.dll">
+      <publishTime>03/01/2019 09:37:08</publishTime>
+    </File>
+    <File Include="bin/Spire.PdfViewer.Forms.dll">
+      <publishTime>05/16/2018 00:17:16</publishTime>
+    </File>
+    <File Include="bin/Spire.Presentation.dll">
+      <publishTime>05/16/2018 00:17:16</publishTime>
+    </File>
+    <File Include="bin/Spire.XLS.dll">
+      <publishTime>03/01/2019 09:35:26</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/28/2015 11:02:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 11:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/28/2015 11:02:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/28/2015 11:03:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 11:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 22:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 11:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 11:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 11:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 11:04:30</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>07/18/2013 00:03:52</publishTime>
+    </File>
+    <File Include="bin/Z.EntityFramework.Extensions.dll">
+      <publishTime>05/18/2022 17:52:54</publishTime>
+    </File>
+    <File Include="bin/zh/Hangfire.Core.resources.dll">
+      <publishTime>09/19/2017 15:58:56</publishTime>
+    </File>
+    <File Include="Certificates/bidc_certificate.cer">
+      <publishTime>05/18/2022 17:52:56</publishTime>
+    </File>
+    <File Include="connectionstring.config">
+      <publishTime>08/18/2022 11:31:25</publishTime>
+    </File>
+    <File Include="Data/Asset/80/Logo.jpg">
+      <publishTime>11/05/2018 14:11:53</publishTime>
+    </File>
+    <File Include="Data/Asset/arial.ttf">
+      <publishTime>01/09/2019 14:54:55</publishTime>
+    </File>
+    <File Include="Data/Asset/Bienbanhuyhoadon.docx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/Bienbanthaythehoadon.docx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/Bienbanthuhoihoadon.docx">
+      <publishTime>09/18/2019 15:25:40</publishTime>
+    </File>
+    <File Include="Data/Asset/check-valid.png">
+      <publishTime>08/09/2022 16:38:23</publishTime>
+    </File>
+    <File Include="Data/Asset/DebtsView-En.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/DebtsView-Vn.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/font-times-new-roman-bold-italic.ttf">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/font-times-new-roman-bold.ttf">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/font-times-new-roman-italic.ttf">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/font-times-new-roman.ttf">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/hoadon-huy.png">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/hoadon-mau.png">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/hoadon-mau1.png">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/hoadon-xoa.png">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/hoadonchuyendoi.png">
+      <publishTime>01/09/2019 14:52:15</publishTime>
+    </File>
+    <File Include="Data/Asset/ImportSchemaCSV_3.ini">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/invoice-detail-statistics-en.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/invoice-detail-statistics-groupby-en.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/invoice-detail-statistics-groupby-vn.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/invoice-detail-statistics-vn.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/logosinhan.png">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/Mau_bien_ban_dieu_chinh_hoa_don.docx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/Notice-Cancel-Invoice.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/Notice-Not-Usel-Invoice.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/rectangle.png">
+      <publishTime>08/09/2022 16:38:23</publishTime>
+    </File>
+    <File Include="Data/Asset/report-invoice-converted-en.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/report-invoice-converted-vn.xlsx">
+      <publishTime>07/29/2022 11:06:37</publishTime>
+    </File>
+    <File Include="Data/Asset/report-monthly-board-invoice-en.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/report-monthly-board-invoice-vn.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/report-monthly-board-invoice.xlsx">
+      <publishTime>05/06/2019 17:19:21</publishTime>
+    </File>
+    <File Include="Data/Asset/report-monthly-board-invoice.xml">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/report-self-printed-invoice.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/SituationInvoiceUsag01.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/SituationInvoiceUsage-en.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/SituationInvoiceUsage-vn.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/SituationInvoiceUsage.xlsx">
+      <publishTime>05/06/2019 17:19:22</publishTime>
+    </File>
+    <File Include="Data/Asset/SituationInvoiceUsage.xml">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/TemplateExport_Client.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/TemplateExport_ClientAccount.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/TemplateExport_LoginUser.xlsx">
+      <publishTime>06/02/2022 16:02:31</publishTime>
+    </File>
+    <File Include="Data/Asset/TemplateExport_SystemLogs-en.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/TemplateExport_SystemLogs-vn.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/Template_backup.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/Template_THDLHoaDon.xlsx">
+      <publishTime>05/30/2022 07:57:14</publishTime>
+    </File>
+    <File Include="Data/Asset/Template_THDLHoaDon_EN.xlsx">
+      <publishTime>05/30/2022 07:57:14</publishTime>
+    </File>
+    <File Include="Data/Asset/temp_sign.bmp">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/temp_sign_big.bmp">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/temp_sign_small.bmp">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Asset/timesbd.ttf">
+      <publishTime>08/09/2022 16:38:23</publishTime>
+    </File>
+    <File Include="Data/Content/Images/check-valid.png">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Content/Images/LogoBIDC.png">
+      <publishTime>08/31/2020 11:27:21</publishTime>
+    </File>
+    <File Include="Data/Content/Images/LogoHuaNan.png">
+      <publishTime>08/31/2020 11:27:21</publishTime>
+    </File>
+    <File Include="Data/Content/Images/LogoMega.png">
+      <publishTime>08/31/2020 11:27:21</publishTime>
+    </File>
+    <File Include="Data/Content/Images/LogoMegaBig.png">
+      <publishTime>08/31/2020 11:27:21</publishTime>
+    </File>
+    <File Include="Data/Content/Images/LogoMegaMail.png">
+      <publishTime>08/31/2020 11:27:21</publishTime>
+    </File>
+    <File Include="Data/Content/Images/LogoShinhan.png">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/Content/Images/LogoSino.png">
+      <publishTime>08/31/2020 11:27:21</publishTime>
+    </File>
+    <File Include="Data/DeclarationTemplate/invoice-declaration-detail-templates.html">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/DeclarationTemplate/invoice-declaration-template.html">
+      <publishTime>05/19/2022 17:48:35</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/auto_reset_password_v1.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/create_useraccount_v1.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/CusIndex3/Notice_VerificationCode.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/CusIndex3/Notice_VerificationCodeAnnouncement.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/CusIndex3/Notice_VerificationCodeSendMonth.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/CusIndex3/Readme.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/Customer_Active_account.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/Notice_AdjustmentInfomation_Invoice.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/Notice_Down_Invoice.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/Notice_Release_Invoice.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/Notice_Substitute_Invoice.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/Notice_Up_Invoice.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/Notice_VerificationCode.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/Notice_VerificationCodeAnnouncement.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/Notice_VerificationCodeSendMonth.txt">
+      <publishTime>06/10/2022 09:20:55</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/notification_usernotlogin_v1.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/remind_dealeradmin_v1.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/RESET_PASSWORD.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/Seller_Active_account.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/Sino_Notice_VerificationCode.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/EmailTemplate/update_useraccount_v1.txt">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/ExportData/report-invoice-adjustment-en.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/ExportData/report-invoice-adjustment-vn.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/ExportData/report-invoice-cancelled-en.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/ExportData/report-invoice-cancelled-vn.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/ExportData/report-invoice-deleted-en.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/ExportData/report-invoice-deleted-vn.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/ExportData/report-invoice-mintues-en.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/ExportData/report-invoice-mintues-vn.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/ExportData/report-invoice-replaced-en.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/ExportData/report-invoice-replaced-vn.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/ExportData/report-invoices-en.xlsx">
+      <publishTime>08/02/2022 10:47:44</publishTime>
+    </File>
+    <File Include="Data/ExportData/report-invoices-portal.xlsx">
+      <publishTime>07/14/2022 15:00:10</publishTime>
+    </File>
+    <File Include="Data/ExportData/report-invoices-vn.xlsx">
+      <publishTime>08/02/2022 10:47:24</publishTime>
+    </File>
+    <File Include="Data/ExportData/Template_ExcelHGR.xlsx">
+      <publishTime>07/21/2022 15:45:27</publishTime>
+    </File>
+    <File Include="Data/ExportTemplate/TemplateExport_Company.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/ExportTemplate/Template_TVan_en.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/ExportTemplate/Template_TVan_vn.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/InvoiceGift_Template.html">
+      <publishTime>07/15/2019 09:23:41</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Shinhan_TemplateGroup.html">
+      <publishTime>07/02/2019 17:06:02</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Statistical_Template.html">
+      <publishTime>06/18/2019 15:48:00</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Template004.html">
+      <publishTime>11/23/2018 14:54:45</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Template005.html">
+      <publishTime>11/23/2018 14:54:45</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Template006.html">
+      <publishTime>11/23/2018 14:54:45</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Template1.html">
+      <publishTime>11/05/2018 14:12:24</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Template10.html">
+      <publishTime>11/05/2018 14:12:24</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Template11.html">
+      <publishTime>11/05/2018 14:12:24</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Template12.html">
+      <publishTime>11/05/2018 14:12:24</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Template13.html">
+      <publishTime>11/05/2018 14:12:24</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Template14.html">
+      <publishTime>11/05/2018 14:12:24</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Template2.html">
+      <publishTime>11/05/2018 14:12:24</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Template4.html">
+      <publishTime>11/05/2018 14:12:24</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Template5.html">
+      <publishTime>11/05/2018 14:12:24</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Template6.html">
+      <publishTime>11/05/2018 14:12:24</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Template7.html">
+      <publishTime>11/05/2018 14:12:24</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Template8.html">
+      <publishTime>11/05/2018 14:12:24</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Template9.html">
+      <publishTime>11/05/2018 14:12:24</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/TemplateDetail.html">
+      <publishTime>09/06/2019 11:48:44</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/TemplateDetail_HuaNan.html">
+      <publishTime>08/31/2020 11:27:21</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/TemplateDetail_Mega.html">
+      <publishTime>08/31/2020 11:27:21</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/TemplateDetail_Sino.html">
+      <publishTime>08/31/2020 11:27:21</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/TemplateGroup.html">
+      <publishTime>09/06/2019 11:48:44</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/TemplateGroup_BIDC.html">
+      <publishTime>08/31/2020 11:27:21</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/TemplateGroup_Shinhan.html">
+      <publishTime>08/09/2022 16:33:16</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Template_Discount.html">
+      <publishTime>09/06/2019 11:48:43</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Template_InvoiceGift.html">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/InvoiceTemplate/Template_Statistical.html">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Logo.jpg">
+      <publishTime>05/06/2019 17:19:15</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Notice-Cancel-Invoice.xlsx">
+      <publishTime>05/06/2019 17:19:14</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Notice-Not-Usel-Invoice.xlsx">
+      <publishTime>05/06/2019 17:19:14</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/1108.zip">
+      <publishTime>05/06/2019 17:19:02</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/1109.zip">
+      <publishTime>05/06/2019 17:19:02</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/1120.zip">
+      <publishTime>05/06/2019 17:19:03</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/54.zip">
+      <publishTime>05/06/2019 17:19:02</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/60.zip">
+      <publishTime>05/06/2019 17:19:14</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/61.zip">
+      <publishTime>05/06/2019 17:19:14</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/63.zip">
+      <publishTime>05/06/2019 17:19:02</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/64.zip">
+      <publishTime>05/06/2019 17:19:02</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/65.zip">
+      <publishTime>05/06/2019 17:19:02</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/69/79_0011_Sign.pdf">
+      <publishTime>05/06/2019 17:19:02</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/Sign/109_0043_Sign.pdf">
+      <publishTime>05/06/2019 17:19:02</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/Sign/110_0044_Sign.pdf">
+      <publishTime>05/06/2019 17:19:03</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/Sign/111_0045_Sign.pdf">
+      <publishTime>05/06/2019 17:19:03</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/Sign/121_0051_Sign.pdf">
+      <publishTime>05/06/2019 17:19:03</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/Temp/54/54_20171115143409.zip">
+      <publishTime>05/06/2019 17:19:14</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/Temp/54/54_20171118174051.zip">
+      <publishTime>05/06/2019 17:19:14</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/Temp/54/54_20171118180553.zip">
+      <publishTime>05/06/2019 17:19:14</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/Temp/54/54_20171118180647.zip">
+      <publishTime>05/06/2019 17:19:14</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/Temp/60/60_20171118215546.zip">
+      <publishTime>05/06/2019 17:19:03</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/Temp/60/60_20171118220057.zip">
+      <publishTime>05/06/2019 17:19:03</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/Temp/60/60_20171118220436.zip">
+      <publishTime>05/06/2019 17:19:03</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/Temp/60/60_20171118220608.zip">
+      <publishTime>05/06/2019 17:19:03</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/Temp/60/60_20171118220906.zip">
+      <publishTime>05/06/2019 17:19:03</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/Temp/61/61_20171118224659.zip">
+      <publishTime>05/06/2019 17:19:04</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/Releases/Temp/64/64_20171119003016.zip">
+      <publishTime>05/06/2019 17:19:14</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/report-monthly-board-invoice.xlsx">
+      <publishTime>05/06/2019 17:19:15</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/report-monthly-board-invoice.xml">
+      <publishTime>05/06/2019 17:19:02</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/report-self-printed-invoice.xlsx">
+      <publishTime>05/06/2019 17:19:14</publishTime>
+    </File>
+    <File Include="Data/MyCompanyImages/80/SituationInvoiceUsage.xml">
+      <publishTime>05/06/2019 17:19:15</publishTime>
+    </File>
+    <File Include="Data/ReportTemplate/Notice-Cancel-Invoice.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/ReportTemplate/Notice-Not-Usel-Invoice.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/ReportTemplate/report-monthly-board-invoice.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/ReportTemplate/report-monthly-board-invoice.xml">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/ReportTemplate/report-self-printed-invoice.xlsx">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Data/ReportTemplate/SituationInvoiceUsage.xml">
+      <publishTime>05/18/2022 17:52:57</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/18/2022 17:52:55</publishTime>
+    </File>
+    <File Include="NLog.config">
+      <publishTime>05/18/2022 17:52:56</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/23/2022 09:40:11</publishTime>
+    </File>
+    <File Include="Service References/T24ServiceReference/InvoiceServer.API.T24ServiceReference.helloResponse.datasource">
+      <publishTime>05/18/2022 17:52:56</publishTime>
+    </File>
+    <File Include="Service References/T24ServiceReference/InvoiceServer.API.T24ServiceReference.InqueryServiceResponse.datasource">
+      <publishTime>05/18/2022 17:52:56</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/13/2022 15:34:12</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

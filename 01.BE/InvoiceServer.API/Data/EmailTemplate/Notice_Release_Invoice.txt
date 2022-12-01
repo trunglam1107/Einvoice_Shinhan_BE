@@ -1,0 +1,13 @@
+﻿Thông báo phát hành hóa đơn 
+
+<p>Kính gửi Quý khách hàng,</p>
+<p>Xin trân trọng cảm ơn Quý khách hàng đã sử dụng dịch vụ của UNIT-VIETNAME.</p>
+<p>$CompanyName vừa phát hành hóa đơn của Quý khách hàng. </p>
+<p>Hóa đơn được phát hành có số: $invNumber thuộc mẫu: $pattern và ký hiệu: $serial</p>
+<p>Ðể xem chi tiết hóa đơn, Quý khách hàng vui lòng truy cập địa chỉ http://unit.e-invoice.vn</p>
+</br>
+</br>
+<p>Có bất kỳ vướng mắc nào xin liên hệ với chúng tôi.</p>
+<p>Số điện thoại	: (08)3824 8888 </p>
+<p>Email		: hoadondientu@unit-ca.vn</p>
+</br>

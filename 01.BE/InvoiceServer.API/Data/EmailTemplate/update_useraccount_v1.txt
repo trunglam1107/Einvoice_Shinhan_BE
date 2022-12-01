@@ -1,0 +1,6 @@
+﻿Thông tin tài khoản D-QUOTE của bạn đã được thay đổi
+
+<p>Thông tin tài khoản của bạn đã được thay đổi như sau:</p>
+<p>UserName: {Username}</p>
+<p>Email: {Email}</p>
+<p>Password: {Password}</p>

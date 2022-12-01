@@ -1,0 +1,44 @@
+Ngân hàng Sinopac Ngày phát hành: @InvoiceDate Hóa đơn số: $invNumber / Sinopac bank Invoice date: @InvoiceDate Invoice no: $invNumber
+		<table class="tableHeader" style="width:625px; height:62px; border-bottom: 1px solid;">
+			<tr>
+				<td>
+					<img src='$logo' class="logoMail" width="167" style="width:167px; height:auto">
+				</td>
+				<td>
+					<p style="font-size: 12px;font-style: italic;text-align: right;">
+						Ngân hàng Sinopac-{BankAddress}
+					</p>
+					<p style="font-size: 12px;font-style: italic; text-align: right;">
+						Sinopac Bank-{BankAddressEn}
+					</p>
+				</td>
+			</tr>
+		</table>
+		<br><b style ="font-size: 13px">Kính gửi Quý khách hàng,</b></br>
+		<p style ="font-size: 13px">Chúng tôi trân trọng gửi đến Quý khách hàng hóa đơn điện tử trong file đính kèm theo email này.</p>
+		
+		<p style ="font-size: 13px">Số hiệu và ngày tháng phát hành của hóa đơn điện tử được thể hiện ở tiêu đề.<p/>
+		<ul>
+			<li class ="noteMail" style ="font-size: 12px; opacity: 0.7;"> Hóa đơn điện tử có giá trị pháp lý tương đương với hóa đơn giấy;</li>
+			<li class ="noteMail" style ="font-size: 12px; opacity: 0.7;"> Quý khách vui lòng kiểm tra thông tin và lưu trữ hóa đơn theo quy định.</li>
+		</ul>
+		<p style ="font-size: 13px">Trong trường hợp Quý khách có bất kỳ thắc mắc hoặc yêu cầu nào liên quan đến Hóa đơn điện tử, vui lòng liên hệ </br> Nhân viên phụ trách tại Chi nhánh thực hiện giao dịch để được hỗ trợ. <p/>
+		<p style ="font-size: 13px">Trân trọng,<p/>
+		<b class="Italic" style="font-style:italic;font-size: 13px">Ngân hàng Sinopac – Chi nhánh TP.HCM</b>
+		<p class="line" style="width:625px;border-top: 1px solid black;">&nbsp;</p>
+		<b style ="font-size: 13px;">Dear Valued Customer, </b>
+		<p style ="font-size: 13px">We would like to provide you with the E-invoice attached in this email.</p>
+
+		<p style ="font-size: 13px">Invoice number and issuance date is noted at email’s subject.<p/>
+		<ul>
+			<li class ="noteMail" style ="font-size: 12px; opacity: 0.7;"> Electronic invoices are legally valid equivalent to paper invoices;</li>
+			<li class ="noteMail" style ="font-size: 12px; opacity: 0.7;"> Please help to check details and put electronic invoices into storage in accordance with law.</li>
+		</ul>
+		<p style ="font-size: 13px">Should you have any question relating to your E-invoice, please contact our teller in charge at of our branch for</br>further support.<p/>
+		<p style ="font-size: 13px">Respectfully,<p/>
+		<b class="Italic" style="font-style:italic; font-size: 13px">Bank Sinopac – Ho Chi Minh City branch.</b>
+		</br>
+		<div class="Desc" style="width:625px; background-color: #fdf4ef; padding: 8px; font-size: 12px">
+			<p>Thư điện tử này được gửi từ hệ thống tự động, quý khách vui lòng không trả lời thư điện tử này. Thư điện tử này cùng các tài liệu đính kèm chỉ nhằm mục đích sử dụng cho đúng người nhận. Nếu Quý khách không phải là người nhận được chỉ định, xin vui lòng xóa thư này đồng thời thông báo cho người gửi thông qua Tổng đài {BankPhone}.</p>
+			<p class="Italic" style="font-style: italic">This is an auto-generated email, please do not reply to it. This e-mail and any of its attachment is intended solely for recipient’s use. If you are not the addressee, please delete it immediately and notify the sender by contacting our branch at {BankPhone}.</p>
+		</div>

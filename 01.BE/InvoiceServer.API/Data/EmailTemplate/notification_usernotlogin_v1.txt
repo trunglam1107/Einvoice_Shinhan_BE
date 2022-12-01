@@ -1,0 +1,8 @@
+﻿Danh sách tài khoản không được đăng nhập trong một thời gian dài
+
+<p><strong>UserName: {Username}</strong></p>
+<p>UserId: {UserId}</p>
+<p>Email: {Email}</p>
+<p>Truy lần cuối lúc: {LastAccessedTime}</p>
+<p>---------------------------------------------</p>
+

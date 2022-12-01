@@ -1,0 +1,135 @@
+<HSoThueDTu>
+  <HSoKhaiThue id="_NODE_TO_SIGN">
+    <TTinChung>
+      <TTinDVu>
+        <maDVu>HTKK</maDVu>
+        <tenDVu>HTKK</tenDVu>
+        <pbanDVu>3.2.5</pbanDVu>
+        <ttinNhaCCapDVu>
+        </ttinNhaCCapDVu>
+      </TTinDVu>
+      <TTinTKhaiThue>
+        <TKhaiThue>
+          <maTKhai>
+          </maTKhai>
+          <tenTKhai>Báo cáo tình hình sử dụng hóa đơn</tenTKhai>
+          <moTaBMau>(Ban hành kèm theo Thông tư số 156/2013/TT-BTC ngày 06/11/2013 của Bộ Tài chính)</moTaBMau>
+          <pbanTKhaiXML>
+          </pbanTKhaiXML>
+          <loaiTKhai>
+          </loaiTKhai>
+          <soLan>0</soLan>
+          <KyKKhaiThue>
+            <kieuKy>Q</kieuKy>
+            <kyKKhai>1/2016</kyKKhai>
+            <kyKKhaiTuNgay>01/01/2016</kyKKhaiTuNgay>
+            <kyKKhaiDenNgay>31/03/2016</kyKKhaiDenNgay>
+            <kyKKhaiTuThang>
+            </kyKKhaiTuThang>
+            <kyKKhaiDenThang>
+            </kyKKhaiDenThang>
+          </KyKKhaiThue>
+          <maCQTNoiNop>
+          </maCQTNoiNop>
+          <tenCQTNoiNop>
+          </tenCQTNoiNop>
+          <ngayLapTKhai>2016-04-19</ngayLapTKhai>
+          <GiaHan>
+            <maLyDoGiaHan>
+            </maLyDoGiaHan>
+            <lyDoGiaHan>
+            </lyDoGiaHan>
+          </GiaHan>
+          <nguoiKy>nguoi ky</nguoiKy>
+          <ngayKy>2016-04-19</ngayKy>
+          <nganhNgheKD>
+          </nganhNgheKD>
+        </TKhaiThue>
+        <NNT>
+          <mst>0101003060-001</mst>
+          <tenNNT>Công ty cổ phần chứng khoán ngân hàng đầu tư và phát triển Việt Nam chi nhánh TP HCM</tenNNT>
+          <dchiNNT>Lầu 9, 146 Nguyễn Công Trứ, Quận 1, TP HCM</dchiNNT>
+          <phuongXa>
+          </phuongXa>
+          <maHuyenNNT>
+          </maHuyenNNT>
+          <tenHuyenNNT>
+          </tenHuyenNNT>
+          <maTinhNNT>
+          </maTinhNNT>
+          <tenTinhNNT>Hà Nội</tenTinhNNT>
+          <dthoaiNNT>08.39142690</dthoaiNNT>
+          <faxNNT>
+          </faxNNT>
+          <emailNNT>
+          </emailNNT>
+        </NNT>
+      </TTinTKhaiThue>
+    </TTinChung>
+    <CTieuTKhaiChinh>
+      <kyBCaoCuoi>0</kyBCaoCuoi>
+      <chuyenDiaDiem>
+      </chuyenDiaDiem>
+      <ngayDauKyBC>
+      </ngayDauKyBC>
+      <ngayCuoiKyBC>
+      </ngayCuoiKyBC>
+      <HoaDon>
+        <ChiTiet>
+          <tenHDon>Hóa đơn giá trị gia tăng</tenHDon>
+          <maHoaDon>01GTKT0</maHoaDon>
+          <kHieuMauHDon>01GTKT0/001</kHieuMauHDon>
+          <kHieuHDon>AA/16E</kHieuHDon>
+          <soTonMuaTrKy_tongSo>5000</soTonMuaTrKy_tongSo>
+          <soTonDauKy_tuSo />
+          <soTonDauKy_denSo />
+          <muaTrongKy_tuSo>0000001</muaTrongKy_tuSo>
+          <muaTrongKy_denSo>0005000</muaTrongKy_denSo>
+          <tongSoSuDung_cong>5000</tongSoSuDung_cong>
+          <tongSoSuDung_tuSo>0000001</tongSoSuDung_tuSo>
+          <tongSoSuDung_denSo>0005000</tongSoSuDung_denSo>
+          <soDaSDung>218</soDaSDung>
+          <xoaBo_soLuong>6</xoaBo_soLuong>
+          <xoaBo_so>0000034, 0000036, 0000081, 0000086, 0000101, 0000111</xoaBo_so>
+          <mat_soLuong>0</mat_soLuong>
+          <huy_soLuong>4776</huy_soLuong>
+          <huy_so>0000225 - 0005000</huy_so>
+          <tonCuoiKy_tuSo />
+          <tonCuoiKy_denSo />
+          <tonCuoiKy_soLuong>0</tonCuoiKy_soLuong>
+        </ChiTiet>
+        <ChiTiet>
+          <tenHDon>Hóa đơn giá trị gia tăng</tenHDon>
+          <maHoaDon>01GTKT0</maHoaDon>
+          <kHieuMauHDon>01GTKT0/002</kHieuMauHDon>
+          <kHieuHDon>AA/16E</kHieuHDon>
+          <soTonMuaTrKy_tongSo>5000</soTonMuaTrKy_tongSo>
+          <soTonDauKy_tuSo />
+          <soTonDauKy_denSo />
+          <muaTrongKy_tuSo>0000001</muaTrongKy_tuSo>
+          <muaTrongKy_denSo>0005000</muaTrongKy_denSo>
+          <tongSoSuDung_cong>98.00000</tongSoSuDung_cong>
+          <tongSoSuDung_tuSo>0000001</tongSoSuDung_tuSo>
+          <tongSoSuDung_denSo>0000098</tongSoSuDung_denSo>
+          <soDaSDung>98.00000</soDaSDung>
+          <xoaBo_soLuong>0</xoaBo_soLuong>
+          <xoaBo_so />
+          <mat_soLuong>0</mat_soLuong>
+          <huy_soLuong>0</huy_soLuong>
+          <huy_so />
+          <tonCuoiKy_tuSo>0000099</tonCuoiKy_tuSo>
+          <tonCuoiKy_denSo>0005000</tonCuoiKy_denSo>
+          <tonCuoiKy_soLuong>4902.00000</tonCuoiKy_soLuong>
+        </ChiTiet>
+      </HoaDon>
+      <tongCongSoTonDKy>10000</tongCongSoTonDKy>
+      <tongCongSDung>5098,00000</tongCongSDung>
+      <tongCongSoTonCKy>4902,00000</tongCongSoTonCKy>
+      <nguoiLapBieu>
+      </nguoiLapBieu>
+      <nguoiDaiDien>
+      </nguoiDaiDien>
+      <ngayBCao>19/04/2016</ngayBCao>
+    </CTieuTKhaiChinh>
+  </HSoKhaiThue>
+</HSoThueDTu>

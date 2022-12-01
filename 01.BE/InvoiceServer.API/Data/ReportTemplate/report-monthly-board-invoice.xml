@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HSoThueDTu>
+<HSoKhaiThue>
+<TTinChung>
+<TTinDVu>
+<maDVu></maDVu>
+<tenDVu></tenDVu>
+<pbanDVu></pbanDVu>
+<ttinNhaCCapDVu></ttinNhaCCapDVu>
+</TTinDVu>
+<TTinTKhaiThue>
+<TKhaiThue>
+	<maTKhai></maTKhai>
+	<tenTKhai></tenTKhai>
+	<moTaBMau>(Ban hành kèm theo Thông tư số 119/2014/TT-BTC ngày 25/8/2014 của Bộ Tài chính)</moTaBMau>
+	<pbanTKhaiXML>2.0.7</pbanTKhaiXML>
+	<loaiTKhai>C</loaiTKhai>
+	<soLan>0</soLan>
+<KyKKhaiThue>
+<kieuKy>M</kieuKy>
+<kyKKhai>01/2015</kyKKhai>
+<kyKKhaiTuNgay>01/01/2015</kyKKhaiTuNgay>
+<kyKKhaiDenNgay>31/01/2015</kyKKhaiDenNgay>
+<kyKKhaiTuThang>01</kyKKhaiTuThang>
+<kyKKhaiDenThang>01</kyKKhaiDenThang>
+</KyKKhaiThue>
+<maCQTNoiNop></maCQTNoiNop>
+<tenCQTNoiNop></tenCQTNoiNop>
+<ngayLapTKhai>2015-09-19</ngayLapTKhai>
+<GiaHan>
+<maLyDoGiaHan></maLyDoGiaHan>
+<lyDoGiaHan></lyDoGiaHan>
+</GiaHan>
+<nguoiKy></nguoiKy>
+<ngayKy></ngayKy>
+<nganhNgheKD></nganhNgheKD>
+</TKhaiThue>
+<NNT>
+<mst>0100996190</mst>
+<tenNNT><![CDATA[Công ty Cổ phần Phần mềm Việt]]></tenNNT>
+<dchiNNT><![CDATA[Phòng 901, Golden Land, Hoàng Huy Tower, 274 Nguyễn Trãi, Thanh Xuân, Hà Nội]]></dchiNNT>
+<phuongXa></phuongXa>
+<maHuyenNNT></maHuyenNNT>
+<tenHuyenNNT></tenHuyenNNT>
+<maTinhNNT></maTinhNNT>
+<tenTinhNNT></tenTinhNNT>
+<dthoaiNNT>04.39745699</dthoaiNNT>
+<faxNNT></faxNNT>
+<emailNNT></emailNNT>
+	</NNT>
+</TTinTKhaiThue>
+</TTinChung>
+ <CTieuTKhaiChinh>
+<tieuMucHachToan></tieuMucHachToan>
+<ct21></ct21>
+<ct22></ct22>
+<GiaTriVaThueGTGTHHDVMuaVao>
+<ct23></ct23>
+<ct24></ct24>
+</GiaTriVaThueGTGTHHDVMuaVao>
+<ct25></ct25>
+<ct26></ct26>
+<HHDVBRaChiuThueGTGT>
+	<ct27></ct27>
+	<ct28></ct28>
+</HHDVBRaChiuThueGTGT>
+<ct29></ct29>
+<HHDVBRaChiuTSuat5>
+	<ct30></ct30>
+	<ct31></ct31>
+</HHDVBRaChiuTSuat5>
+<HHDVBRaChiuTSuat10>
+	<ct32></ct32>
+	<ct33></ct33>
+	</HHDVBRaChiuTSuat10>
+	<TongDThuVaThueGTGTHHDVBRa>
+		<ct34></ct34>
+		<ct35></ct35>
+	</TongDThuVaThueGTGTHHDVBRa>
+	<ct36></ct36>
+	<ct37></ct37>
+	<ct38></ct38>
+	<ct39></ct39>
+	<ct40a></ct40a>
+	<ct40b></ct40b>
+	<ct40></ct40>
+	<ct41></ct41>
+	<ct42></ct42>
+	<ct43></ct43>
+</CTieuTKhaiChinh>
+<PLuc>
+<PL01_1_GTGT>
+<HHDVKChiuThue>
+<ChiTietHHDVKChiuThue>
+</ChiTietHHDVKChiuThue>
+<tongDThuBRaKChiuThue>0</tongDThuBRaKChiuThue>
+</HHDVKChiuThue>
+<HHDVThue0>
+<ChiTietHHDVThue0>
+</ChiTietHHDVThue0>
+<tongDThuBRaThue0>0</tongDThuBRaThue0><tongThueBRaThue0>0</tongThueBRaThue0>
+</HHDVThue0>
+<HHDVThue5>
+<ChiTietHHDVThue5>
+</ChiTietHHDVThue5>
+<tongDThuBRaThue5>0</tongDThuBRaThue5><tongThueBRaThue5>0</tongThueBRaThue5>
+</HHDVThue5>
+<HHDVThue10>
+<ChiTietHHDVThue10>
+</ChiTietHHDVThue10>
+<tongDThuBRaThue10>0</tongDThuBRaThue10><tongThueBRaThue10>0</tongThueBRaThue10>
+</HHDVThue10>
+<tongDThuBRa>0</tongDThuBRa><tongDThuBRaChiuThue>0</tongDThuBRaChiuThue><tongThueBRa>0</tongThueBRa>
+</PL01_1_GTGT>
+</PLuc>
+</HSoKhaiThue>
+</HSoThueDTu>

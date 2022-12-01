@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="efe1ff39eb414467a737bc5bddd19217" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.ANNOUNCEMENT" Width="1.5" PointX="0.75" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AUTONUMBERSETTING" Width="1.5" PointX="13.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.CANCELLINGINVOICE" Width="1.5" PointX="10.5" PointY="28.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.CITY" Width="1.5" PointX="0.75" PointY="34.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.CLIENT" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.CONFIGEMAILSERVER" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.CURRENCY" Width="1.5" PointX="2.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DELETINGINVOICE" Width="1.5" PointX="10.5" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.EMAILACTIVE" Width="1.5" PointX="0.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.EMAILACTIVEFILEATTACH" Width="1.5" PointX="3" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.EMAILACTIVEREFERENCE" Width="1.5" PointX="8.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.FUNCTION" Width="1.5" PointX="11.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.GATEWAY_LOG" Width="1.5" PointX="2.75" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.HISTORYREPORTGENERAL" Width="1.5" PointX="4.75" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.HOLDINVOICE" Width="1.5" PointX="13.5" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.HOLDINVOICEDETAIL" Width="1.5" PointX="15.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.IMPORT_LOG" Width="1.5" PointX="15.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.INVOICE" Width="1.5" PointX="8.25" PointY="27.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.INVOICE_HIST" Width="1.5" PointX="17.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.INVOICEDECLARATION" Width="1.5" PointX="5.25" PointY="32.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.INVOICEDECLARATIONRELEASE" Width="1.5" PointX="13.5" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.INVOICEDECLARATIONRELEASEREGISTERTYPE" Width="1.5" PointX="11.25" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.INVOICEDETAIL" Width="1.5" PointX="13.5" PointY="36.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.INVOICEDETAIL_HIST" Width="1.5" PointX="13.75" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.INVOICEGIFT" Width="1.5" PointX="10.5" PointY="40.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.INVOICERELEAS" Width="1.5" PointX="5.25" PointY="52.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.INVOICERELEASESDETAIL" Width="1.5" PointX="7.5" PointY="53.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.INVOICERELEASESTEMPLATE" Width="1.5" PointX="15.75" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.INVOICESAMPLE" Width="1.5" PointX="9" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.INVOICESYSTEMSETTING" Width="1.5" PointX="17.75" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.INVOICETEMPLATE" Width="1.5" PointX="9" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.INVOICETEMPLATESAMPLE" Width="1.5" PointX="6.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.INVOICETYPE" Width="1.5" PointX="6.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.JOB" Width="1.5" PointX="0.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.KEYSTORE" Width="1.5" PointX="5.25" PointY="59.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.LASTKEY" Width="1.5" PointX="10.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.LOGINUSER" Width="1.5" PointX="11.25" PointY="32.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MINVOICE_DATA" Width="1.5" PointX="19.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MYCOMPANY" Width="1.5" PointX="3" PointY="30.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MYCOMPANYUPGRADE" Width="1.5" PointX="19.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.NOTIFICATIONMINVOICE" Width="1.5" PointX="19.75" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.NOTIFICATIONUSEINVOICE" Width="1.5" PointX="5.25" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.NOTIFICATIONUSEINVOICEDETAIL" Width="1.5" PointX="13.5" PointY="30.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PRODUCT" Width="1.5" PointX="11.25" PointY="59.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.QUARZTJOB" Width="1.5" PointX="3" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.QUEUECREATEFILEINVOICE" Width="1.5" PointX="13.75" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.REGISTERTEMPLATE" Width="1.5" PointX="11.25" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.RELEASEANNOUNCEMENT" Width="1.5" PointX="16.5" PointY="34" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.RELEASEANNOUNCEMENTDETAIL" Width="1.5" PointX="18.75" PointY="34.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.RELEASEINVOICE" Width="1.5" PointX="16.5" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.RELEASEINVOICEDETAIL" Width="1.5" PointX="18.75" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.REPORTCANCELLING" Width="1.5" PointX="5.25" PointY="75.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.REPORTCANCELLINGDETAIL" Width="1.5" PointX="7.5" PointY="75.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ROLE" Width="1.5" PointX="9" PointY="48.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ROLEFUNCTION" Width="1.5" PointX="16.5" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.SEQUENCE_CONFIG" Width="1.5" PointX="19.75" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.SERVERSIGNSETTING" Width="1.5" PointX="19.75" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.SESSIONUPLOADEDTOKEN" Width="1.5" PointX="18.75" PointY="24.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.SIGNATURE" Width="1.5" PointX="20.75" PointY="24.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.SIGNDETAIL" Width="1.5" PointX="21.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.SOFTVENDOR" Width="1.5" PointX="7.75" PointY="24.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.STATISTICAL" Width="1.5" PointX="10.5" PointY="45.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.SYMBOL" Width="1.5" PointX="7.5" PointY="45.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.SYSTEMLOG" Width="1.5" PointX="21.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.SYSTEMSETTING" Width="1.5" PointX="21.75" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TAX" Width="1.5" PointX="9" PointY="58.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TAXDEPARTMENT" Width="1.5" PointX="0.75" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TYPEPAYMENT" Width="1.5" PointX="21.75" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.UNITLIST" Width="1.5" PointX="9" PointY="62.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.USERLEVEL" Width="1.5" PointX="9" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.INVOICEREPLACE" Width="1.5" PointX="22.75" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.MYCOMPANY_BK" Width="1.5" PointX="23.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.UV_GETFUNCTIONOFUSER" Width="1.5" PointX="23.75" PointY="13.625" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_CANCELLINGINVOICE_INVOICE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_MYCOMPANY_CITY" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_NOTIFICATIONUSEINVOICE_CITY" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_INVOICE_CLIENT" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_DELETINGINVOICE_INVOICE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_EMAILACTIVEFILEATTACH_EMAILACTIVE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_FUNCTION_USERLEVEL" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ROLEFUNCTION_FUNCTION" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_HODLINVOICE_REGISTERTEMPLATES" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_HOLDINVOICEDETAIL_HOLDINVOICE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_INVOICE_INVOICE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_INVOICE_MYCOMPANY" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_INVOICE_REGISTERTEMPLATES" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_INVOICEDETAIL_INVOICE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_INVOICEGIFT_INVOICE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_STATISTICAL_INVOICE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_INVOICEDECLARATION_REGISTERTEMPLATES" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_REFID" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C0055729" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C0055733" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_INVOICEDECLARATIONRELEASE_INVOICEDECLARATIONRELEASEREGISTERTYPE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_INVOICEDETAIL_PRODUCT" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_INVOICEDETAIL_TAX" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_INVOICERELEASES_MYCOMPANY" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_INVOICERELEASESDETAIL_INVOICERELEASES1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_INVOICERELEASESDETAIL_REGISTERTEMPLATES" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_INVOICESAMPLE_INVOICETEMPLATESAMPLE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_INVOICESAMPLE_INVOICETYPE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_REGISTERTEMPLATES_INVOICESAMPLE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_REGISTERTEMPLATES_INVOICETEMPLATE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.SYS_C00193968" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_KEYSTORE_MYCOMPANY" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_LOGINUSER_MYCOMPANY" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_LOGINUSER_USERLEVEL" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_RELEASEANNOUNCEMENT_LOGINUSER" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_RELEASEINVOICE_LOGINUSER" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_MYCOMPANY_MYCOMPANY" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_MYCOMPANY_TAXDEPARTMENT" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_NOTIFICATIONUSEINVOICE_MYCOMPANY" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_NOTIFICATIONUSEINVOICEDETAIL_MYCOMPANY" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_RELEASEANNOUNCEMENT_MYCOMPANY" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_RELEASEINVOICE_MYCOMPANY" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_REPORTCANCELLING_MYCOMPANY1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_NOTIFICATIONUSEINVOICE_TAXDEPARTMENT" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_NOTIFICATIONUSEINVOICEDETAIL_NOTIFICATIONUSEINVOICE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_NOTIFICATIONUSEINVOICEDETAIL_REGISTERTEMPLATES" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_PRODUCT_TAX" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_PRODUCT_UNITLIST" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_REPORTCANCELLINGDETAIL_REGISTERTEMPLATES" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_RELEASEANNOUNCEMENTDETAIL_RELEASEANNOUNCEMENT" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_RELEASEINVOICEDETAIL_RELEASEINVOICE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_REPORTCANCELLINGDETAIL_REPORTCANCELLING" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ROLE_USERLEVEL" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_ROLEFUNCTION_ROLE" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.USERROLE" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

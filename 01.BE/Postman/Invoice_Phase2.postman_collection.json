@@ -1,0 +1,807 @@
+{
+	"id": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+	"name": "Invoice_Phase2",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Contract",
+			"description": "",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"order": [
+				"285464dc-1df9-50f9-5f64-f0bbcb9194fe",
+				"6c95b74f-8861-0c9f-4dad-2eed4018de64",
+				"e1c676da-e8f8-26d8-4ffd-cf72ffbbf36f"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "160b966a-665d-e6fa-2518-f82843c739b0"
+		},
+		{
+			"name": "Email kích hoạt",
+			"description": "",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"order": [
+				"468342c9-5fae-91fe-d7e0-6d928a208894",
+				"fd2fb24d-bdc8-06bb-fed0-aae0aa384bb9",
+				"a93be040-7b9e-cc90-573e-67865690368c",
+				"7a7d185b-fee2-f1f4-24c2-c3497d73f120"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "44410f8a-e217-0c25-4e6c-db6d9d667b27"
+		},
+		{
+			"name": "Employee",
+			"description": "",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"order": [
+				"49aff750-aa2f-b9f2-807f-59ed28c65531",
+				"eb9ce733-839a-8595-b58f-649f6940cf33",
+				"2d15a19b-843a-fe75-4cf0-bdcdd15b66fb",
+				"638296ca-1165-24b8-c83a-e8e75fe93882"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "d077184b-a26e-9626-25ac-ab0d19406eaf"
+		},
+		{
+			"name": "Login",
+			"description": "",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"order": [
+				"3c9876ad-af7c-8d6e-d289-d5f08618b789"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "71be201b-f139-a456-7cb3-ce4bd8705471"
+		},
+		{
+			"name": "Register Template",
+			"description": "Register Template",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"order": [
+				"f9f5bd3f-d1c6-9489-5f32-d2d1e240d8a2",
+				"a94c30f5-c281-968f-8843-88c744f54759",
+				"aeb79c28-2057-5309-efd1-5b04c3602a90",
+				"a432b788-ddf3-533f-19a9-4b196c37da91"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "94872fec-0e9b-3405-2a50-f939532f0ff7"
+		},
+		{
+			"name": "Role",
+			"description": "",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"order": [
+				"3815d1eb-8ee1-40f9-4f4e-340b6648ddcc"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "5a46f704-f5be-ec69-ddb1-680cb59f3557"
+		},
+		{
+			"name": "Templates",
+			"description": "",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"order": [
+				"96d2d032-b805-5b5c-667f-e38d9824c82f"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "8da0e685-2b4f-3b26-4189-b2f4f42a45e1"
+		}
+	],
+	"folders_order": [
+		"160b966a-665d-e6fa-2518-f82843c739b0",
+		"44410f8a-e217-0c25-4e6c-db6d9d667b27",
+		"71be201b-f139-a456-7cb3-ce4bd8705471",
+		"d077184b-a26e-9626-25ac-ab0d19406eaf",
+		"5a46f704-f5be-ec69-ddb1-680cb59f3557",
+		"94872fec-0e9b-3405-2a50-f939532f0ff7",
+		"8da0e685-2b4f-3b26-4189-b2f4f42a45e1"
+	],
+	"timestamp": 1520931871171,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "285464dc-1df9-50f9-5f64-f0bbcb9194fe",
+			"headers": "X-Authorization-Token: Bank\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "X-Authorization-Token",
+					"value": "Bank",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1280/contract",
+			"folder": "160b966a-665d-e6fa-2518-f82843c739b0",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\r\ntests[\"Body has code\"] = responseBody.has(\"code\");\r\ntests[\"Body has message\"] = responseBody.has(\"message\");\r\ntests[\"Body has data result\"] = responseBody.has(\"data\");\r\n\r\nvar data = JSON.parse(responseBody);\r\ntests[\"Code is 1 for success\"] = data.code === 1;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521266047466,
+			"name": "Lấy danh sách hợp đồng",
+			"description": "Lấy danh sách hợp đồng",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "2d15a19b-843a-fe75-4cf0-bdcdd15b66fb",
+			"headers": "X-Authorization-Token: Bank\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "X-Authorization-Token",
+					"value": "Bank",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1280/employee",
+			"folder": "d077184b-a26e-9626-25ac-ab0d19406eaf",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\r\ntests[\"Body has code\"] = responseBody.has(\"code\");\r\ntests[\"Body has message\"] = responseBody.has(\"message\");\r\n\r\nvar data = JSON.parse(responseBody);\r\ntests[\"Code is 1 for success\"] = data.code === 2000;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521023733097,
+			"name": "Tạo mới nhân viên",
+			"description": "Tạo mới nhân viên",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Minhkhoa\",\n    \"loginId\": \"LienDuc1\",\n    \"password\": \"1234\",\n    \"email\": \"phucduc11188@gmail.com\",\n    \"mobile\": null,\n    \"createDate\": null,\n    \"role\":  [\n        {\n            \"id\": 1,\n            \"screenName\": \"Quản lý công ty\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 1,\n            \"delete\": 1,\n            \"active\": 2,\n            \"approve\": 2\n        },\n        {\n            \"id\": 2,\n            \"screenName\": \"Quản lý đại lý\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 1,\n            \"delete\": 1,\n            \"active\": 2,\n            \"approve\": 2\n        },\n        {\n            \"id\": 3,\n            \"screenName\": \"Cấu hình Email server\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 2,\n            \"delete\": 2,\n            \"active\": 2,\n            \"approve\": 2\n        },\n        {\n            \"id\": 4,\n            \"screenName\": \"Email Kích hoạt\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 2,\n            \"delete\": 2,\n            \"active\": 2,\n            \"approve\": 2\n        },\n        {\n            \"id\": 5,\n            \"screenName\": \"Quản lý hợp đồng\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 1,\n            \"delete\": 1,\n            \"active\": 2,\n            \"approve\": 2\n        },\n        {\n            \"id\": 7,\n            \"screenName\": \"Quản lý khách hàng\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 1,\n            \"delete\": 1,\n            \"active\": 1,\n            \"approve\": 2\n        }\n    ]\n}\n",
+			"collection_id": "e081fb9a-7afb-e911-fab2-1ae03f124b28"
+		},
+		{
+			"id": "3815d1eb-8ee1-40f9-4f4e-340b6648ddcc",
+			"headers": "X-Authorization-Token: Bank\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "X-Authorization-Token",
+					"value": "Bank",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://203.128.246.167:8084/roles/employee",
+			"folder": "5a46f704-f5be-ec69-ddb1-680cb59f3557",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\r\ntests[\"Body has code\"] = responseBody.has(\"code\");\r\ntests[\"Body has message\"] = responseBody.has(\"message\");\r\ntests[\"Body has data result\"] = responseBody.has(\"data\");\r\n\r\nvar data = JSON.parse(responseBody);\r\ntests[\"Code is 1 for success\"] = data.code === 1;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1522026779012,
+			"name": "Lấy danh sách role theo level",
+			"description": "Lấy danh sách role theo level",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "3c9876ad-af7c-8d6e-d289-d5f08618b789",
+			"headers": "X-Authorization-Token: adminphi1\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "X-Authorization-Token",
+					"value": "adminphi1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1280/session/login",
+			"folder": "71be201b-f139-a456-7cb3-ce4bd8705471",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\r\ntests[\"Body has code\"] = responseBody.has(\"code\");\r\ntests[\"Body has message\"] = responseBody.has(\"message\");\r\n\r\nvar data = JSON.parse(responseBody);\r\ntests[\"Code is 1 for success\"] = data.code === 2000;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521019348451,
+			"name": "Login sussceful",
+			"description": "Login fail when userId is empty",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"responses": [],
+			"rawModeData": "{\n    \"userId\": \"Bank\",\n    \"password\": \"12345\"\n}\n",
+			"collection_id": "e081fb9a-7afb-e911-fab2-1ae03f124b28"
+		},
+		{
+			"id": "468342c9-5fae-91fe-d7e0-6d928a208894",
+			"headers": "X-Authorization-Token: Bank\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "X-Authorization-Token",
+					"value": "Bank",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1280/emailActive",
+			"folder": "44410f8a-e217-0c25-4e6c-db6d9d667b27",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\r\ntests[\"Body has code\"] = responseBody.has(\"code\");\r\ntests[\"Body has message\"] = responseBody.has(\"message\");\r\ntests[\"Body has data result\"] = responseBody.has(\"data\");\r\n\r\nvar data = JSON.parse(responseBody);\r\ntests[\"Code is 1 for success\"] = data.code === 1;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521333650966,
+			"name": "Lấy danh sách",
+			"description": "Lấy danh sách hợp đồng",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "49aff750-aa2f-b9f2-807f-59ed28c65531",
+			"headers": "X-Authorization-Token: Bank\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "X-Authorization-Token",
+					"value": "Bank",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1280/employee?skip=0&take=10&orderBy=id&orderType=asc",
+			"folder": "d077184b-a26e-9626-25ac-ab0d19406eaf",
+			"queryParams": [
+				{
+					"key": "skip",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "take",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "orderBy",
+					"value": "id",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "orderType",
+					"value": "asc",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\r\ntests[\"Body has code\"] = responseBody.has(\"code\");\r\ntests[\"Body has message\"] = responseBody.has(\"message\");\r\ntests[\"Body has data result\"] = responseBody.has(\"data\");\r\n\r\nvar data = JSON.parse(responseBody);\r\ntests[\"Code is 1 for success\"] = data.code === 1;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1522026775639,
+			"name": "Lấy danh sách nhân viên",
+			"description": "Lấy danh sách nhân viên",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "638296ca-1165-24b8-c83a-e8e75fe93882",
+			"headers": "X-Authorization-Token: Bank\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "X-Authorization-Token",
+					"value": "Bank",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1280/employee/2064",
+			"folder": "d077184b-a26e-9626-25ac-ab0d19406eaf",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\r\ntests[\"Body has code\"] = responseBody.has(\"code\");\r\ntests[\"Body has message\"] = responseBody.has(\"message\");\r\n\r\nvar data = JSON.parse(responseBody);\r\ntests[\"Code is 1 for success\"] = data.code === 2000;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521174169979,
+			"name": "Update nhân viên",
+			"description": "Update  nhân viên",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Minhkhoa02\",\n    \"loginId\": \"LienDuc\",\n    \"password\": \"1234\",\n    \"email\": \"phucduc1188@gmail.com\",\n    \"mobile\": \"09887756554\",\n    \"createDate\": \"2018/03/14\",\n    \"roles\": [\n        {\n            \"id\": 1,\n            \"screenName\": \"Quản lý công ty\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 1,\n            \"delete\": 1,\n            \"active\": 2,\n            \"approve\": 2\n        },\n        {\n            \"id\": 2,\n            \"screenName\": \"Quản lý đại lý\",\n            \"read\": 1,\n            \"update\": 0,\n            \"create\": 0,\n            \"delete\": 0,\n            \"active\": 0,\n            \"approve\": 2\n        },\n        {\n            \"id\": 3,\n            \"screenName\": \"Cấu hình Email server\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 2,\n            \"delete\": 2,\n            \"active\": 2,\n            \"approve\": 2\n        },\n        {\n            \"id\": 4,\n            \"screenName\": \"Email Kích hoạt\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 2,\n            \"delete\": 2,\n            \"active\": 2,\n            \"approve\": 2\n        },\n        {\n            \"id\": 5,\n            \"screenName\": \"Quản lý hợp đồng\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 1,\n            \"delete\": 1,\n            \"active\": 2,\n            \"approve\": 2\n        },\n        {\n            \"id\": 7,\n            \"screenName\": \"Quản lý khách hàng\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 1,\n            \"delete\": 1,\n            \"active\": 1,\n            \"approve\": 2\n        }\n    ]\n }"
+		},
+		{
+			"id": "6c95b74f-8861-0c9f-4dad-2eed4018de64",
+			"headers": "X-Authorization-Token: Bank\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "X-Authorization-Token",
+					"value": "Bank",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1280/contract",
+			"folder": "d077184b-a26e-9626-25ac-ab0d19406eaf",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\r\ntests[\"Body has code\"] = responseBody.has(\"code\");\r\ntests[\"Body has message\"] = responseBody.has(\"message\");\r\n\r\nvar data = JSON.parse(responseBody);\r\ntests[\"Code is 1 for success\"] = data.code === 2000;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521332856680,
+			"name": "Tạo mới danh sách hợp đồng",
+			"description": "Update  nhân viên",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"responses": [],
+			"rawModeData": "{\n        \"contractType\": 2,\n        \"customerId\": 1139,\n        \"contractNo\": \"HDSDQH00012\",\n        \"numberInvoice\": \"5000\",\n        \"datePayment\": \"2018/03/14\",\n        \"paid\": 0,\n        \"typePayment\": \"Block\",\n        \"createAccount\": 1\n        \n    }"
+		},
+		{
+			"id": "7a7d185b-fee2-f1f4-24c2-c3497d73f120",
+			"headers": "X-Authorization-Token: Bank\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "X-Authorization-Token",
+					"value": "Bank",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1280/emailActive/sendemail/4",
+			"folder": "44410f8a-e217-0c25-4e6c-db6d9d667b27",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\r\ntests[\"Body has code\"] = responseBody.has(\"code\");\r\ntests[\"Body has message\"] = responseBody.has(\"message\");\r\n\r\nvar data = JSON.parse(responseBody);\r\ntests[\"Code is 1 for success\"] = data.code === 2000;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1522026781012,
+			"name": "Send Email",
+			"description": "Send email active",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"responses": [],
+			"rawModeData": "{\n        \"companyId\": 1133,\n        \"id\": 4,\n        \"title\": \"Thông tin đăng nhập hệ thống 'Quản Trị Hóa Đơn Điện Tử'\",\n        \"emailTo\": \"phucduc88@gmail.com\",\n        \"content\": \"\\r\\n<p>Thông tin đăng nhập hệ thống như sau:</p>\\r\\n<p> -Tài khoản: 90000998023_1</p>\\r\\n<p> -Mật khẩu: 7c5ab690</p>\\r\\n<br/>\\r\\n<p> -Website chính thức hệ thống</p>\\r\\n<p> http://45.118.151.43:8080/eInvoicing/Login.jsp</p>\\r\\n\",\n        \"createdDate\": null,\n        \"sendtedDate\": null,\n        \"status\": \"0\"\n }"
+		},
+		{
+			"id": "96d2d032-b805-5b5c-667f-e38d9824c82f",
+			"headers": "X-Authorization-Token: Bank\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "X-Authorization-Token",
+					"value": "Bank",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1280/templates",
+			"folder": "8da0e685-2b4f-3b26-4189-b2f4f42a45e1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\r\ntests[\"Body has code\"] = responseBody.has(\"code\");\r\ntests[\"Body has message\"] = responseBody.has(\"message\");\r\ntests[\"Body has data result\"] = responseBody.has(\"data\");\r\n\r\nvar data = JSON.parse(responseBody);\r\ntests[\"Code is 1 for success\"] = data.code === 1;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1522040464685,
+			"name": "Lấy danh sách mẫu hóa đơn",
+			"description": "Lấy danh sách mẫu hóa đơn",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "a432b788-ddf3-533f-19a9-4b196c37da91",
+			"headers": "X-Authorization-Token: Bank\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "X-Authorization-Token",
+					"value": "Bank",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1280/register-templates",
+			"folder": "94872fec-0e9b-3405-2a50-f939532f0ff7",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\r\ntests[\"Body has code\"] = responseBody.has(\"code\");\r\ntests[\"Body has message\"] = responseBody.has(\"message\");\r\n\r\nvar data = JSON.parse(responseBody);\r\ntests[\"Code is 1 for success\"] = data.code === 2000;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1522036374365,
+			"name": "Tạo mới  mẫu hóa đơn đăng ký",
+			"description": "Tạo mới nhân viên",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Minhkhoa\",\n    \"loginId\": \"LienDuc1\",\n    \"password\": \"1234\",\n    \"email\": \"phucduc11188@gmail.com\",\n    \"mobile\": null,\n    \"createDate\": null,\n    \"role\":  [\n        {\n            \"id\": 1,\n            \"screenName\": \"Quản lý công ty\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 1,\n            \"delete\": 1,\n            \"active\": 2,\n            \"approve\": 2\n        },\n        {\n            \"id\": 2,\n            \"screenName\": \"Quản lý đại lý\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 1,\n            \"delete\": 1,\n            \"active\": 2,\n            \"approve\": 2\n        },\n        {\n            \"id\": 3,\n            \"screenName\": \"Cấu hình Email server\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 2,\n            \"delete\": 2,\n            \"active\": 2,\n            \"approve\": 2\n        },\n        {\n            \"id\": 4,\n            \"screenName\": \"Email Kích hoạt\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 2,\n            \"delete\": 2,\n            \"active\": 2,\n            \"approve\": 2\n        },\n        {\n            \"id\": 5,\n            \"screenName\": \"Quản lý hợp đồng\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 1,\n            \"delete\": 1,\n            \"active\": 2,\n            \"approve\": 2\n        },\n        {\n            \"id\": 7,\n            \"screenName\": \"Quản lý khách hàng\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 1,\n            \"delete\": 1,\n            \"active\": 1,\n            \"approve\": 2\n        }\n    ]\n}\n"
+		},
+		{
+			"id": "a93be040-7b9e-cc90-573e-67865690368c",
+			"headers": "X-Authorization-Token: Bank\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "X-Authorization-Token",
+					"value": "Bank",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1280/emailActive/4",
+			"folder": "44410f8a-e217-0c25-4e6c-db6d9d667b27",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\r\ntests[\"Body has code\"] = responseBody.has(\"code\");\r\ntests[\"Body has message\"] = responseBody.has(\"message\");\r\ntests[\"Body has data result\"] = responseBody.has(\"data\");\r\n\r\nvar data = JSON.parse(responseBody);\r\ntests[\"Code is 1 for success\"] = data.code === 1;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1522026783271,
+			"name": "Chi tiết",
+			"description": "Lấy chi tiết  hợp đồng",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "a94c30f5-c281-968f-8843-88c744f54759",
+			"headers": "X-Authorization-Token: Bank\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "X-Authorization-Token",
+					"value": "Bank",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1280/register-templates/1054",
+			"folder": "94872fec-0e9b-3405-2a50-f939532f0ff7",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\r\ntests[\"Body has code\"] = responseBody.has(\"code\");\r\ntests[\"Body has message\"] = responseBody.has(\"message\");\r\ntests[\"Body has data result\"] = responseBody.has(\"data\");\r\n\r\nvar data = JSON.parse(responseBody);\r\ntests[\"Code is 1 for success\"] = data.code === 1;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1522039550935,
+			"name": "Chi tiết mẫu hóa đơn đăng ký",
+			"description": "Lấy danh sách mẫu hóa đơn đăng ký",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "aeb79c28-2057-5309-efd1-5b04c3602a90",
+			"headers": "X-Authorization-Token: Bank\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "X-Authorization-Token",
+					"value": "Bank",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1280/register-templates/2064",
+			"folder": "94872fec-0e9b-3405-2a50-f939532f0ff7",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\r\ntests[\"Body has code\"] = responseBody.has(\"code\");\r\ntests[\"Body has message\"] = responseBody.has(\"message\");\r\n\r\nvar data = JSON.parse(responseBody);\r\ntests[\"Code is 1 for success\"] = data.code === 2000;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1522036370498,
+			"name": "update mẫu hóa đơn đăng ký",
+			"description": "Update  nhân viên",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Minhkhoa02\",\n    \"loginId\": \"LienDuc\",\n    \"password\": \"1234\",\n    \"email\": \"phucduc1188@gmail.com\",\n    \"mobile\": \"09887756554\",\n    \"createDate\": \"2018/03/14\",\n    \"roles\": [\n        {\n            \"id\": 1,\n            \"screenName\": \"Quản lý công ty\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 1,\n            \"delete\": 1,\n            \"active\": 2,\n            \"approve\": 2\n        },\n        {\n            \"id\": 2,\n            \"screenName\": \"Quản lý đại lý\",\n            \"read\": 1,\n            \"update\": 0,\n            \"create\": 0,\n            \"delete\": 0,\n            \"active\": 0,\n            \"approve\": 2\n        },\n        {\n            \"id\": 3,\n            \"screenName\": \"Cấu hình Email server\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 2,\n            \"delete\": 2,\n            \"active\": 2,\n            \"approve\": 2\n        },\n        {\n            \"id\": 4,\n            \"screenName\": \"Email Kích hoạt\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 2,\n            \"delete\": 2,\n            \"active\": 2,\n            \"approve\": 2\n        },\n        {\n            \"id\": 5,\n            \"screenName\": \"Quản lý hợp đồng\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 1,\n            \"delete\": 1,\n            \"active\": 2,\n            \"approve\": 2\n        },\n        {\n            \"id\": 7,\n            \"screenName\": \"Quản lý khách hàng\",\n            \"read\": 1,\n            \"update\": 1,\n            \"create\": 1,\n            \"delete\": 1,\n            \"active\": 1,\n            \"approve\": 2\n        }\n    ]\n }"
+		},
+		{
+			"id": "e1c676da-e8f8-26d8-4ffd-cf72ffbbf36f",
+			"headers": "X-Authorization-Token: Bank\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "X-Authorization-Token",
+					"value": "Bank",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1280/contract/1",
+			"folder": "160b966a-665d-e6fa-2518-f82843c739b0",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\r\ntests[\"Body has code\"] = responseBody.has(\"code\");\r\ntests[\"Body has message\"] = responseBody.has(\"message\");\r\ntests[\"Body has data result\"] = responseBody.has(\"data\");\r\n\r\nvar data = JSON.parse(responseBody);\r\ntests[\"Code is 1 for success\"] = data.code === 1;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521325720952,
+			"name": "Lấy chi tiết  hợp đồng",
+			"description": "Lấy chi tiết  hợp đồng",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "eb9ce733-839a-8595-b58f-649f6940cf33",
+			"headers": "X-Authorization-Token: khoalm\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "X-Authorization-Token",
+					"value": "khoalm",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1280/notice-use-invoice/startNumberInvoiceUse/1055/DD/18",
+			"folder": "d077184b-a26e-9626-25ac-ab0d19406eaf",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\r\ntests[\"Body has code\"] = responseBody.has(\"code\");\r\ntests[\"Body has message\"] = responseBody.has(\"message\");\r\ntests[\"Body has data result\"] = responseBody.has(\"data\");\r\n\r\nvar data = JSON.parse(responseBody);\r\ntests[\"Code is 1 for success\"] = data.code === 1;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1522026773247,
+			"name": "Lấy chi tiết nhân viên",
+			"description": "Lấy chi tiết nhân viên",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "f9f5bd3f-d1c6-9489-5f32-d2d1e240d8a2",
+			"headers": "X-Authorization-Token: Bank\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "X-Authorization-Token",
+					"value": "Bank",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1280/register-templates",
+			"folder": "94872fec-0e9b-3405-2a50-f939532f0ff7",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\r\ntests[\"Body has code\"] = responseBody.has(\"code\");\r\ntests[\"Body has message\"] = responseBody.has(\"message\");\r\ntests[\"Body has data result\"] = responseBody.has(\"data\");\r\n\r\nvar data = JSON.parse(responseBody);\r\ntests[\"Code is 1 for success\"] = data.code === 1;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1522039390246,
+			"name": "Lấy danh sách mẫu hóa đơn đăng ký",
+			"description": "Lấy danh sách mẫu hóa đơn đăng ký",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "fd2fb24d-bdc8-06bb-fed0-aae0aa384bb9",
+			"headers": "X-Authorization-Token: Bank\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "X-Authorization-Token",
+					"value": "Bank",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1280/emailActive",
+			"folder": "44410f8a-e217-0c25-4e6c-db6d9d667b27",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\r\ntests[\"Body has code\"] = responseBody.has(\"code\");\r\ntests[\"Body has message\"] = responseBody.has(\"message\");\r\n\r\nvar data = JSON.parse(responseBody);\r\ntests[\"Code is 1 for success\"] = data.code === 2000;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521332866049,
+			"name": "Tạo mới",
+			"description": "Update  nhân viên",
+			"collectionId": "e081fb9a-7afb-e911-fab2-1ae03f124b28",
+			"responses": [],
+			"rawModeData": "{\n        \"contractType\": 1,\n        \"customerId\": 1139,\n        \"contractNo\": \"HDSDQH00012\",\n        \"numberInvoice\": \"5000\",\n        \"datePayment\": \"2018/03/14\",\n        \"paid\": 0,\n        \"typePayment\": \"Block\",\n        \"createAccount\": 1\n        \n    }"
+		}
+	]
+}

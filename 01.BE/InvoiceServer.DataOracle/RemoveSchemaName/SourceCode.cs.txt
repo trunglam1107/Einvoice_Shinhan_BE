@@ -1,0 +1,85 @@
+// Authorize: TungTT1 - UNIT CORP.
+// Just tested for DB have table, store procedure
+// if have more about function, index, etc..., need test again
+// Put this program to Build event of visual studio
+
+using System;
+using System.IO;
+using System.Text.RegularExpressions;
+
+namespace RemoveSchemaName
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            try
+            {
+                var removeSchemaName = new RemoveSchemaName();
+                removeSchemaName.Run();
+            }
+            catch (Exception ex)
+            {
+                while (ex.InnerException != null)
+                {
+                    Log.LogAppendMonth(ex.Message);
+                    ex = ex.InnerException;
+                }
+                Log.LogAppendMonth(ex.Message);
+                Log.LogAppendMonth();
+            }
+        }
+    }
+
+    public class RemoveSchemaName
+    {
+        private string currentDir { get; set; }
+        private string _DBAccessorDir { get; set; }
+        private string _DBAccessorFileName { get; set; }
+
+        public RemoveSchemaName()
+        {
+            this.currentDir = System.Environment.CurrentDirectory;
+            this._DBAccessorDir = currentDir.Substring(0, currentDir.LastIndexOf(@"\")) + @"\DBAccessor";
+            this._DBAccessorFileName = this._DBAccessorDir + @"\DataClasses.edmx";
+        }
+
+        public void Run()
+        {
+            var edmxTextData = File.ReadAllText(this._DBAccessorFileName);
+
+            // Replace for: 
+            // Schema="TungTT1"
+            // store:Schema="TungTT1"
+            string regex1 = @"[\w+:]*Schema=""[\w]+""";
+            edmxTextData = Regex.Replace(edmxTextData, regex1, "");
+
+            // Replace for: SELECT * FROM [Schema name].[Table name]
+            string regex2 = @"(FROM[\r\s]+)(""[\w]*""\.)(""[\w]*"")";
+            edmxTextData = Regex.Replace(edmxTextData, regex2, "$1$3");
+
+            File.WriteAllText(this._DBAccessorFileName, edmxTextData);
+        }
+    }
+
+    public static class Log
+    {
+        public static void LogAppendMonth(string message = "")
+        {
+            var currentDir = System.Environment.CurrentDirectory;
+            var currentDateTime = DateTime.Now;
+            string currMonth = currentDateTime.Month.ToString();
+            string currYear = currentDateTime.Year.ToString();
+            string logFileName = $"RemoveSchemaName_Log_{currMonth}.{currYear}.txt";
+            
+            using (StreamWriter outputFile = File.AppendText(Path.Combine(currentDir, logFileName)))
+            {
+                outputFile.WriteLine($"--------------------- {currentDateTime} ---------------------");
+                outputFile.WriteLine(message);
+                outputFile.WriteLine($"#################################################################");
+                outputFile.WriteLine();
+            }
+        }
+    }
+
+}

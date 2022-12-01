@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C66E385-F5EC-4FBE-A470-CD468FB9594F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InvoiceServer.Business</RootNamespace>
+    <AssemblyName>InvoiceServer.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\RuleCheckStaticCode\IFRS_Rules Check Static Code_C#.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>..\RuleCheckStaticCode\IFRS_Rules Check Static Code_C#.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\Account.cs" />
+    <Compile Include="BL\AnnouncementBO.cs" />
+    <Compile Include="BL\AutoNumberBO.cs" />
+    <Compile Include="BL\CurrencyListBO.cs" />
+    <Compile Include="BL\DeclarationBO.cs" />
+    <Compile Include="BL\GatewaylogBO.cs" />
+    <Compile Include="BL\HistoryReportGeneralBO.cs" />
+    <Compile Include="BL\Import.InvoiceBO.cs" />
+    <Compile Include="BL\Interface\IAnnouncementBO.cs" />
+    <Compile Include="BL\Interface\IAutoNumberBO.cs" />
+    <Compile Include="BL\Interface\ICurrencyListBO.cs" />
+    <Compile Include="BL\Interface\IDeclarationBO.cs" />
+    <Compile Include="BL\Interface\IGatewaylogBO.cs" />
+    <Compile Include="BL\Interface\IHistoryReportGeneralBO.cs" />
+    <Compile Include="BL\Interface\IInvoiceDeleteBO.cs" />
+    <Compile Include="BL\Interface\IInvoicePortalBO.cs" />
+    <Compile Include="BL\Interface\IInvoiceSampleBO.cs" />
+    <Compile Include="BL\Interface\IInvoiceTemplateSampleBO.cs" />
+    <Compile Include="BL\Interface\IInvoiceTypeBO.cs" />
+    <Compile Include="BL\Interface\IJobReplacedInvoice.cs" />
+    <Compile Include="BL\Interface\IMyCompanyUpgradeBO.cs" />
+    <Compile Include="BL\Interface\IQuarztJobBO.cs" />
+    <Compile Include="BL\Interface\IReleaseAnnouncementBO.cs" />
+    <Compile Include="BL\Interface\IServicesJobBO.cs" />
+    <Compile Include="BL\Interface\ISignDetailBO.cs" />
+    <Compile Include="BL\Interface\IHoldInvoiceBO.cs" />
+    <Compile Include="BL\Interface\IFileSystemLogBO.cs" />
+    <Compile Include="BL\Interface\ISystemLogBO.cs" />
+    <Compile Include="BL\Interface\IUnitListBO.cs" />
+    <Compile Include="BL\Interface\ISignatureBO.cs" />
+    <Compile Include="BL\Interface\ISystemSettingBO.cs" />
+    <Compile Include="BL\Interface\IReportCancellingBO.cs" />
+    <Compile Include="BL\Interface\IReleaseInvoiceDetailBO.cs" />
+    <Compile Include="BL\Interface\IReportManagementBO.cs" />
+    <Compile Include="BL\Interface\IRoleBO.cs" />
+    <Compile Include="BL\Interface\IRoleFunctionBO.cs" />
+    <Compile Include="BL\Interface\IWorkingCalendarBO.cs" />
+    <Compile Include="BL\InvoiceDeleteBO.cs" />
+    <Compile Include="BL\InvoicePortalBO.cs" />
+    <Compile Include="BL\InvoiceSampleBO.cs" />
+    <Compile Include="BL\InvoiceTemplateSampleBO.cs" />
+    <Compile Include="BL\InvoiceTypeBO.cs" />
+    <Compile Include="BL\JobReplacedInvoiceBO.cs" />
+    <Compile Include="BL\MyCompanyUpgradeBO.cs" />
+    <Compile Include="BL\QuarztJobBO.cs" />
+    <Compile Include="BL\ReleaseAnnouncementBO.cs" />
+    <Compile Include="BL\ReportSummaryBO.cs" />
+    <Compile Include="BL\ServicesJobBO.cs" />
+    <Compile Include="BL\SignDetailBO.cs" />
+    <Compile Include="BL\HoldInvoiceBO.cs" />
+    <Compile Include="BL\FileSystemLogBO.cs" />
+    <Compile Include="BL\SystemLogBO.cs" />
+    <Compile Include="BL\UnitListBO.cs" />
+    <Compile Include="BL\SignatureBO.cs" />
+    <Compile Include="BL\SystemSettingBO.cs" />
+    <Compile Include="BL\QueueCreateFileInvoiceBO.cs" />
+    <Compile Include="BL\ConfigEmailServerBO.cs" />
+    <Compile Include="BL\Email.cs" />
+    <Compile Include="BL\EmailActiveBO.cs" />
+    <Compile Include="BL\Interface\IQueueCreateFileInvoiceBO.cs" />
+    <Compile Include="BL\Interface\IEmailActiveBO.cs" />
+    <Compile Include="BL\Interface\IConfigEmailServerBO.cs" />
+    <Compile Include="BL\Interface\ICustomerBO.cs" />
+    <Compile Include="BL\Interface\IInvoiceTemplateBO.cs" />
+    <Compile Include="BL\Interface\IUserBO.cs" />
+    <Compile Include="BL\CustomerBO.cs" />
+    <Compile Include="BL\Interface\IRoleOfUserBO.cs" />
+    <Compile Include="BL\Permission.cs" />
+    <Compile Include="BL\ReleaseInvoiceDetailBO.cs" />
+    <Compile Include="BL\ReportCancellingBO.cs" />
+    <Compile Include="BL\SoftVendorBO.cs" />
+    <Compile Include="BL\Interface\ISoftVendorBO.cs" />
+    <Compile Include="BL\Interface\IReportSummaryBO.cs" />
+    <Compile Include="BL\KeyStoreBO.cs" />
+    <Compile Include="BL\CityBO.cs" />
+    <Compile Include="BL\Interface\ICancellingInvoiceBO.cs" />
+    <Compile Include="BL\Interface\IKeyStoreBO.cs" />
+    <Compile Include="BL\Interface\IReleaseInvoiceBO.cs" />
+    <Compile Include="BL\Interface\IProcessInvoiceBO.cs" />
+    <Compile Include="BL\Interface\IInvoiceBO.cs" />
+    <Compile Include="BL\Interface\IInvoiceReleasesBO.cs" />
+    <Compile Include="BL\Interface\IInvoiceReleasesDetailBO.cs" />
+    <Compile Include="BL\Interface\INoticeUseInvoiceDetailBO.cs" />
+    <Compile Include="BL\Interface\INoticeUseInvoiceBO.cs" />
+    <Compile Include="BL\Interface\IRegisterTemplatesBO.cs" />
+    <Compile Include="BL\Interface\ITaxBO.cs" />
+    <Compile Include="BL\Interface\ITypePaymentBO.cs" />
+    <Compile Include="BL\Report.InvoiceBO.cs" />
+    <Compile Include="BL\InvoiceBO.cs" />
+    <Compile Include="BL\CancellingInvoiceBO.cs" />
+    <Compile Include="BL\ReleaseInvoiceBO.cs" />
+    <Compile Include="BL\InvoiceReleasesDetailBO.cs" />
+    <Compile Include="BL\NoticeUseInvoiceDetailBO.cs" />
+    <Compile Include="BL\NotificationUseInvoiceBO.cs" />
+    <Compile Include="BL\InvoiceReleasesBO.cs" />
+    <Compile Include="BL\RegisterTemplatesBO.cs" />
+    <Compile Include="BL\TaxBO.cs" />
+    <Compile Include="BL\InvoiceTemplateBO.cs" />
+    <Compile Include="BL\TypePaymentBO.cs" />
+    <Compile Include="BL\TaxDepartmentBO.cs" />
+    <Compile Include="BL\Interface\ICityBO.cs" />
+    <Compile Include="BL\Interface\ITaxDepartmenBO.cs" />
+    <Compile Include="BL\RoleBO.cs" />
+    <Compile Include="BL\RoleFunctionBO.cs" />
+    <Compile Include="BL\UserLevelBO.cs" />
+    <Compile Include="BL\Interface\IUserLevelBO.cs" />
+    <Compile Include="BL\ProductBO.cs" />
+    <Compile Include="BL\DataValidation.cs" />
+    <Compile Include="BL\BOFactory.cs" />
+    <Compile Include="BL\Interface\IProductBO.cs" />
+    <Compile Include="BL\Interface\IMyCompanyBO.cs" />
+    <Compile Include="BL\Interface\ILoginUserBO.cs" />
+    <Compile Include="BL\Interface\IClientBO.cs" />
+    <Compile Include="BL\Interface\ISessionManagerBO.cs" />
+    <Compile Include="BL\Interface\IBOFactory.cs" />
+    <Compile Include="BL\LoginUserBO.cs" />
+    <Compile Include="BL\ClientBO.cs" />
+    <Compile Include="BL\MyCompanyBO.cs" />
+    <Compile Include="BL\SessionManagerBO.cs" />
+    <Compile Include="BL\TransferData.cs" />
+    <Compile Include="BL\WorkingCalendarBO.cs" />
+    <Compile Include="Cache\UserSessionCache.cs" />
+    <Compile Include="DAO\AutoNumberRepository.cs" />
+    <Compile Include="DAO\CurrencyRepository.cs" />
+    <Compile Include="DAO\DeclarationReleaseRepository.cs" />
+    <Compile Include="DAO\DeclarationRepository.cs" />
+    <Compile Include="DAO\DeletingInvoiceRepository.cs" />
+    <Compile Include="DAO\EmailActiveFileAttachRepository.cs" />
+    <Compile Include="DAO\AnnouncementRepository.cs" />
+    <Compile Include="DAO\EmailActiveReferenceRepository.cs" />
+    <Compile Include="DAO\GatewaylogRepository.cs" />
+    <Compile Include="DAO\HistoryReportGeneralRepository.cs" />
+    <Compile Include="DAO\HoldInvoiceDetailRepository.cs" />
+    <Compile Include="DAO\CompanySymbolRepository.cs" />
+    <Compile Include="DAO\Interface\IAnnouncementRepository.cs" />
+    <Compile Include="DAO\Interface\IAutoNumberRepository.cs" />
+    <Compile Include="DAO\Interface\ICancellingInvoiceRepository.cs" />
+    <Compile Include="DAO\Interface\ICityRepository.cs" />
+    <Compile Include="DAO\Interface\IClientRepository.cs" />
+    <Compile Include="DAO\Interface\ICompanySymbolRepository.cs" />
+    <Compile Include="DAO\Interface\IConfigEmailServerRepository.cs" />
+    <Compile Include="DAO\Interface\ICurrencyRepository.cs" />
+    <Compile Include="DAO\Interface\IDbTransactionManager.cs" />
+    <Compile Include="DAO\Interface\IDeclarationReleaseRepository.cs" />
+    <Compile Include="DAO\Interface\IDeclarationRepository.cs" />
+    <Compile Include="DAO\Interface\IDeletingInvoiceRepository.cs" />
+    <Compile Include="DAO\Interface\IEmailActiveFileAttachRepository.cs" />
+    <Compile Include="DAO\Interface\IEmailActiveReferenceRepository.cs" />
+    <Compile Include="DAO\Interface\IEmailActiveRepository.cs" />
+    <Compile Include="DAO\Interface\IFunctionRepository.cs" />
+    <Compile Include="DAO\Interface\IGatewaylogRepository.cs" />
+    <Compile Include="DAO\Interface\IHistoryReportGeneralRepository.cs" />
+    <Compile Include="DAO\Interface\IHoldInvoiceDetailRepository.cs" />
+    <Compile Include="DAO\Interface\IInvoiceCompanyUseRepository.cs" />
+    <Compile Include="DAO\Interface\IInvoiceConcludeDetailRepository.cs" />
+    <Compile Include="DAO\Interface\IInvoiceConcludeRepository.cs" />
+    <Compile Include="DAO\Interface\IInvoiceDeclarationReleaseRegisterTypeReposity.cs" />
+    <Compile Include="DAO\Interface\IInvoiceDetailRepository.cs" />
+    <Compile Include="DAO\Interface\IInvoiceReleasesTemplateRepository.cs" />
+    <Compile Include="DAO\Interface\IInvoiceReplaceRepository.cs" />
+    <Compile Include="DAO\Interface\IInvoiceRepository.cs" />
+    <Compile Include="DAO\Interface\IInvoiceSampleRepository.cs" />
+    <Compile Include="DAO\Interface\IInvoiceGiftRepository.cs" />
+    <Compile Include="DAO\Interface\IInvoiceStatisticalRepository.cs" />
+    <Compile Include="DAO\Interface\IInvoiceTemplateRepository.cs" />
+    <Compile Include="DAO\Interface\IInvoiceTemplateSampleRepository.cs" />
+    <Compile Include="DAO\Interface\IInvoiceTypeRepository.cs" />
+    <Compile Include="DAO\Interface\IKeyStoreRepository.cs" />
+    <Compile Include="DAO\Interface\ILastKeyRepository.cs" />
+    <Compile Include="DAO\Interface\ILoginUserRepository.cs" />
+    <Compile Include="DAO\Interface\IMyCompanyUpgradeRepository.cs" />
+    <Compile Include="DAO\Interface\IMyCompanyRepository.cs" />
+    <Compile Include="DAO\Interface\INotificationUseInvoiceDetailRepository.cs" />
+    <Compile Include="DAO\Interface\INotificationUseInvoiceRepository.cs" />
+    <Compile Include="DAO\Interface\IProductRepository.cs" />
+    <Compile Include="DAO\Interface\IQuarztJobRepository.cs" />
+    <Compile Include="DAO\Interface\IQueueCreateFileInvoiceRepository.cs" />
+    <Compile Include="DAO\Interface\IReleaseAnnouncementDetaiRepository.cs" />
+    <Compile Include="DAO\Interface\IReleaseInvoiceDetaiRepository.cs" />
+    <Compile Include="DAO\Interface\IReleaseAnnouncementRepository.cs" />
+    <Compile Include="DAO\Interface\IReleaseInvoiceRepository.cs" />
+    <Compile Include="DAO\Interface\IReportCancellingDetailRepository.cs" />
+    <Compile Include="DAO\Interface\IReportCancellingRepository.cs" />
+    <Compile Include="DAO\Interface\IRepository.cs" />
+    <Compile Include="DAO\Interface\IRepositoryFactory.cs" />
+    <Compile Include="DAO\Interface\IRoleFunctionRepository.cs" />
+    <Compile Include="DAO\Interface\IRoleRepository.cs" />
+    <Compile Include="DAO\Interface\IServicesJobRepository.cs" />
+    <Compile Include="DAO\Interface\ISignDetailRepository.cs" />
+    <Compile Include="DAO\Interface\ISignatureRepository.cs" />
+    <Compile Include="DAO\Interface\ISoftVendorRepository.cs" />
+    <Compile Include="DAO\Interface\ISystemLogRepository.cs" />
+    <Compile Include="DAO\Interface\ISystemSettingRepository.cs" />
+    <Compile Include="DAO\Interface\ITaxDepartmentRepository.cs" />
+    <Compile Include="DAO\Interface\ITaxRepository.cs" />
+    <Compile Include="DAO\Interface\ITypePaymentRepository.cs" />
+    <Compile Include="DAO\Interface\IHoldInvoiceRepository.cs" />
+    <Compile Include="DAO\Interface\IUnitListRepository.cs" />
+    <Compile Include="DAO\Interface\IUserLevelRepository.cs" />
+    <Compile Include="DAO\Interface\IUV_GetFunctionOfUserRepository.cs" />
+    <Compile Include="DAO\InvoiceDeclarationReleaseRegisterTypeReposity.cs" />
+    <Compile Include="DAO\InvoiceGiftRepository.cs" />
+    <Compile Include="DAO\InvoiceReplaceRepository.cs" />
+    <Compile Include="DAO\InvoiceSampleRepository.cs" />
+    <Compile Include="DAO\InvoiceStatisticalRepository.cs" />
+    <Compile Include="DAO\InvoiceTemplateSampleRepository.cs" />
+    <Compile Include="DAO\FunctionRepository.cs" />
+    <Compile Include="DAO\InvoiceTypeRepository.cs" />
+    <Compile Include="DAO\LastKeyRepository.cs" />
+    <Compile Include="DAO\MyCompanyUpgradeRepository.cs" />
+    <Compile Include="DAO\QuarztJobRepository.cs" />
+    <Compile Include="DAO\ReleaseAnnouncementRepository.cs" />
+    <Compile Include="DAO\ReleaseAnnouncementDetailRepository.cs" />
+    <Compile Include="DAO\RoleFunctionRepository.cs" />
+    <Compile Include="DAO\ServicesJobRepository.cs" />
+    <Compile Include="DAO\SignDetailRepository.cs" />
+    <Compile Include="DAO\HoldInvoiceRepository.cs" />
+    <Compile Include="DAO\SingletonAuthenticationLDAP.cs" />
+    <Compile Include="DAO\SystemLogRepository.cs" />
+    <Compile Include="DAO\UV_GetFunctionOfUserRepository.cs" />
+    <Compile Include="DAO\UnitListRepository.cs" />
+    <Compile Include="DAO\SignatureRepository.cs" />
+    <Compile Include="DAO\SystemSettingRepository.cs" />
+    <Compile Include="DAO\ReportCancellingDetailRepository.cs" />
+    <Compile Include="DAO\ReportCancellingRepository.cs" />
+    <Compile Include="DAO\QueueCreateFileInvoiceRepository.cs" />
+    <Compile Include="DAO\InvoiceReleasesTemplateRepository.cs" />
+    <Compile Include="DAO\InvoiceTemplateRepository.cs" />
+    <Compile Include="DAO\EmailActiveRepository.cs" />
+    <Compile Include="DAO\ConfigEmailServerRepository.cs" />
+    <Compile Include="DAO\SoftVendorRepository.cs" />
+    <Compile Include="DAO\CityRepository.cs" />
+    <Compile Include="DAO\InvoiceDetailRepository.cs" />
+    <Compile Include="DAO\CancellingInvoiceRepository.cs" />
+    <Compile Include="DAO\ReleaseInvoiceRepository.cs" />
+    <Compile Include="DAO\ReleaseInvoiceDetailRepository.cs" />
+    <Compile Include="DAO\InvoiceRepository.cs" />
+    <Compile Include="DAO\NotificationUseInvoiceDetailRepository.cs" />
+    <Compile Include="DAO\InvoiceConcludeDetailRepository.cs" />
+    <Compile Include="DAO\NotificationUseInvoiceRepository.cs" />
+    <Compile Include="DAO\InvoiceConcludeRepository.cs" />
+    <Compile Include="DAO\RegisterTemplatesRepository.cs" />
+    <Compile Include="DAO\TaxRepository.cs" />
+    <Compile Include="DAO\TypePaymentRepository.cs" />
+    <Compile Include="DAO\TaxDepartmentRepository.cs" />
+    <Compile Include="DAO\KeyStoreRepository.cs" />
+    <Compile Include="DAO\ProductRepository.cs" />
+    <Compile Include="DAO\ClientRepository.cs" />
+    <Compile Include="DAO\RoleRepository.cs" />
+    <Compile Include="DAO\UserLevelRepository.cs" />
+    <Compile Include="DAO\DbTransactionManager.cs" />
+    <Compile Include="DAO\MyCompanyRepository.cs" />
+    <Compile Include="DAO\LoginUserRepository.cs" />
+    <Compile Include="DAO\RepositoryFactory.cs" />
+    <Compile Include="DAO\GenericRepository.cs" />
+    <Compile Include="Email\EmailTemplate.cs" />
+    <Compile Include="Email\Interface\IEmail.cs" />
+    <Compile Include="Email\Interface\IProcessEmail.cs" />
+    <Compile Include="Email\ProcessEmail.cs" />
+    <Compile Include="Email\SendGmailMailKit.cs" />
+    <Compile Include="Email\SendGmail.cs" />
+    <Compile Include="ExportData\ReportInvoiceAdjustmentView.cs" />
+    <Compile Include="ExportData\ReportInvoiceCancelledView.cs" />
+    <Compile Include="ExportData\ReportInvoiceDeletedView.cs" />
+    <Compile Include="ExportData\ReportInvoiceMintuesView.cs" />
+    <Compile Include="ExportData\ReportInvoiceReplacedView.cs" />
+    <Compile Include="ExportData\ReportInvoicesCkNumberView.cs" />
+    <Compile Include="ExportData\ReportInvoicesView.cs" />
+    <Compile Include="ExportDocx\NotificationDocx.cs" />
+    <Compile Include="ExportDocx\AnnouncementDocx.cs" />
+    <Compile Include="ExportInvoice\ExportCustomerView.cs" />
+    <Compile Include="ExportInvoice\ExportClientView.cs" />
+    <Compile Include="ExportInvoice\ExportClientAccountView.cs" />
+    <Compile Include="ExportInvoice\ExportLoginUserView.cs" />
+    <Compile Include="ExportInvoice\ExportProductView.cs" />
+    <Compile Include="ExportInvoice\ExportSignature.cs" />
+    <Compile Include="ExportInvoice\ExportSystemLogView.cs" />
+    <Compile Include="ExportInvoice\HQExportFileJob.cs" />
+    <Compile Include="ExportInvoice\Interface\IExportFile.cs" />
+    <Compile Include="ExportInvoice\Interface\IExportInvoiceBaseOnLang.cs" />
+    <Compile Include="ExportInvoice\Interface\IXssf.cs" />
+    <Compile Include="ExportInvoice\ReportInvoiceDataSummaryView.cs" />
+    <Compile Include="ExportInvoice\ReportInvoiceDetailStatisticsView.cs" />
+    <Compile Include="ExportInvoice\ReportCombineView.cs" />
+    <Compile Include="ExportInvoice\ReportCustomerView.cs" />
+    <Compile Include="ExportInvoice\ReportInvoiceConvertedView.cs" />
+    <Compile Include="ExportInvoice\ReportInvoiceDetailStatisticsViewGroupBy.cs" />
+    <Compile Include="ExportInvoice\ReportSummaryView.cs" />
+    <Compile Include="ExportInvoice\ReportMothlyBoardView.cs" />
+    <Compile Include="ExportInvoice\ReportNotUseInvoiceView.cs" />
+    <Compile Include="ExportInvoice\ReportCancelInvoiceView .cs" />
+    <Compile Include="ExportInvoice\ReportSelfPrintedInvoiceView.cs" />
+    <Compile Include="ExportInvoice\HQExportFile.cs" />
+    <Compile Include="ExportInvoice\SelectExportFile.cs" />
+    <Compile Include="ExportInvoice\SituationInvoiceUsageViewAC.cs" />
+    <Compile Include="ExportInvoice\SituationInvoiceUsageView.cs" />
+    <Compile Include="ExportInvoice\SpireProcess.cs" />
+    <Compile Include="ExportXml\InvoiceXml.cs" />
+    <Compile Include="ExportXml\InvoiceXmlJob.cs" />
+    <Compile Include="ExportXml\NotificationInvoiceXmL.cs" />
+    <Compile Include="ExportXml\ParseXML.cs" />
+    <Compile Include="ExportXml\ParseXMLJob.cs" />
+    <Compile Include="ExportXml\ReportGeneralMonthlyXml.cs" />
+    <Compile Include="ExportXml\ReportMothlyBoardXML.cs" />
+    <Compile Include="ExportXml\SituationInvoiceUsageXML.cs" />
+    <Compile Include="Extensions\HttpResponseMessageExtensions.cs" />
+    <Compile Include="ExternalData\ClientApiService.cs" />
+    <Compile Include="ExternalData\RestClient.cs" />
+    <Compile Include="FileProcess\FileProcess.cs" />
+    <Compile Include="Helper\NumberRowInHTML.cs" />
+    <Compile Include="Helper\PDFGetTextData.cs" />
+    <Compile Include="Helper\ImagesSign.cs" />
+    <Compile Include="ImportExcel\ImportExcel.cs" />
+    <Compile Include="ImportFile\ImportFile.cs" />
+    <Compile Include="ImportFile\ImportFileHuanan.cs" />
+    <Compile Include="ImportFile\ImportFileBIDC.cs" />
+    <Compile Include="ImportFile\ImportFileMega.cs" />
+    <Compile Include="ImportFile\ImportFileSino.cs" />
+    <Compile Include="ImportFile\Interface\IImportFileBIDC.cs" />
+    <Compile Include="Models\Account\AccountDetailLogin.cs" />
+    <Compile Include="Models\Account\AccountImport.cs" />
+    <Compile Include="Models\Account\AccountInfo.cs" />
+    <Compile Include="Models\Account\AccountViewModel.cs" />
+    <Compile Include="Models\Account\ChangeLanguage.cs" />
+    <Compile Include="Models\Account\ClientAccountExport.cs" />
+    <Compile Include="Models\Account\ExportAccount.cs" />
+    <Compile Include="Models\AnnouncementPrint\AnnouncementPrintInfo.cs" />
+    <Compile Include="Models\Announcement\AnnouncementExport.cs" />
+    <Compile Include="Models\Announcement\AnnouncementInfo.cs" />
+    <Compile Include="Models\Announcement\AnnouncementMD.cs" />
+    <Compile Include="Models\Announcement\ConditionSearchAnnouncement.cs" />
+    <Compile Include="Models\Announcement\AnnouncementFile.cs" />
+    <Compile Include="Models\Announcement\AnnouncementVerificationCode.cs" />
+    <Compile Include="Models\Announcement\SendEmailVerificationCodeAnnoun.cs" />
+    <Compile Include="Models\AutoNumber\AutoNumberViewModel.cs" />
+    <Compile Include="Models\AutoNumber\ConditionSearchAutoNumber.cs" />
+    <Compile Include="Models\Client\ClientExport.cs" />
+    <Compile Include="Models\Common\BaseConditionSearchModel.cs" />
+    <Compile Include="Models\Company\CompanyUpgradeInfo.cs" />
+    <Compile Include="Models\Company\MegaHeaderInvoiceInfo.cs" />
+    <Compile Include="Models\Company\HuaNanHeaderInvoiceInfo.cs" />
+    <Compile Include="Models\Customer\CustomerExport.cs" />
+    <Compile Include="Models\Company\CustomerOfCompany.cs" />
+    <Compile Include="Models\Company\FooterInvoiceInfo.cs" />
+    <Compile Include="Models\Company\MyCompanyUsing.cs" />
+    <Compile Include="Models\Company\MyUsingModel.cs" />
+    <Compile Include="Models\Contract\ContractAccount.cs" />
+    <Compile Include="Models\Contract\AnnouncementDownload.cs" />
+    <Compile Include="Models\Customer\ListBranch.cs" />
+    <Compile Include="Models\Customer\Branch.cs" />
+    <Compile Include="Models\Customer\ExternalCustomer.cs" />
+    <Compile Include="Models\Email\SendMailTest.cs" />
+    <Compile Include="Models\Email\SendMultiMail.cs" />
+    <Compile Include="Models\Email\EmailServerInfo.cs" />
+    <Compile Include="Models\Email\EmailActiveInfo.cs" />
+    <Compile Include="Models\City\CityInfo.cs" />
+    <Compile Include="Models\Client\ClientDetail.cs" />
+    <Compile Include="Models\CancellingPayment\CancellingPaymentInfo.cs" />
+    <Compile Include="Models\CancellingPayment\CancellingPaymentMaster.cs" />
+    <Compile Include="Models\Email\ConditionSearchEmailActive.cs" />
+    <Compile Include="Models\Company\CompanyAccount.cs" />
+    <Compile Include="Models\Account\MaxUser.cs" />
+    <Compile Include="Models\Account\ChangePassword.cs" />
+    <Compile Include="Models\Account\PasswordInfo.cs" />
+    <Compile Include="Models\Account\ResetPassword.cs" />
+    <Compile Include="Models\Account\AccountDetail.cs" />
+    <Compile Include="Models\Customer\ConditionSearchCustomer.cs" />
+    <Compile Include="Models\Customer\CustomerInfo.cs" />
+    <Compile Include="Models\Email\ReceiverAccountActiveInfo.cs" />
+    <Compile Include="Models\FileSystemLog\ConditionSearchFileSystemLog.cs" />
+    <Compile Include="Models\File\FileInfomation.cs" />
+    <Compile Include="Models\GatewayLog\ConditionSearchGatewaylog.cs" />
+    <Compile Include="Models\GatewayLog\GatewaylogDetail.cs" />
+    <Compile Include="Models\GatewayLog\ReportCompineHistoryTVanExport.cs" />
+    <Compile Include="Models\GatewayLog\ReportHistoryTVanView.cs" />
+    <Compile Include="Models\HistoryReportGeneral\FilterHistoryReportGeneralCondition.cs" />
+    <Compile Include="Models\HistoryReportGeneral\HistoryReportGeneralInfo.cs" />
+    <Compile Include="Models\HistoryReportGeneral\HistoryReportItem.cs" />
+    <Compile Include="Models\HistoryReportGeneral\ReportExcelHGR.cs" />
+    <Compile Include="Models\HistoryReportGeneral\ReportExportAllHGRView.cs" />
+    <Compile Include="Models\HistoryReportGeneral\ReportHistoryItemView.cs" />
+    <Compile Include="Models\HoldInvoice\ConditionSearchHoldInvoice.cs" />
+    <Compile Include="Models\HoldInvoice\HoldInvoiceDetailViewModel.cs" />
+    <Compile Include="Models\HoldInvoice\HoldInvoiceViewModel.cs" />
+    <Compile Include="Models\Import\BIDCImportFromAPIOutput.cs" />
+    <Compile Include="Models\Import\BIDCImportFromAPI.cs" />
+    <Compile Include="Models\Import\ImportLog.cs" />
+    <Compile Include="Models\InvoiceDeclaration\CompanySymbolInfo.cs" />
+    <Compile Include="Models\InvoiceDeclaration\ConditionSearchDeclaration.cs" />
+    <Compile Include="Models\InvoiceDeclaration\DeclarationExportModel.cs" />
+    <Compile Include="Models\InvoiceDeclaration\DeclarationExportPdfInfo.cs" />
+    <Compile Include="Models\InvoiceDeclaration\DeclarationInfo.cs" />
+    <Compile Include="Models\InvoiceDeclaration\DeclarationMaster.cs" />
+    <Compile Include="Models\InvoiceDeclaration\DeclarationReleaseInfo.cs" />
+    <Compile Include="Models\InvoiceDeclaration\ExportSymbol.cs" />
+    <Compile Include="Models\InvoiceDeclaration\RegisterType.cs" />
+    <Compile Include="Models\InvoiceDeclaration\ReportExcelDeclare.cs" />
+    <Compile Include="Models\InvoiceDeclaration\ReportExportAllDeclareView.cs" />
+    <Compile Include="Models\InvoicePrint\InvoiceDetail.cs" />
+    <Compile Include="Models\InvoicePrint\InvoicePrintModel.cs" />
+    <Compile Include="Models\InvoiceReleases\InvoiceSign.cs" />
+    <Compile Include="Models\InvoiceReleases\WebConfigInfo.cs" />
+    <Compile Include="Models\InvoiceSample-Type\ConditionSearchInvoiceType.cs" />
+    <Compile Include="Models\InvoiceSample-Type\ConditionSearchUnitList.cs" />
+    <Compile Include="Models\InvoiceSample-Type\CurrencyListViewModel.cs" />
+    <Compile Include="Models\InvoiceSample-Type\InvoiceSampleViewModel.cs" />
+    <Compile Include="Models\InvoiceSample-Type\InvoiceTypeViewModel.cs" />
+    <Compile Include="Models\InvoiceSample-Type\UnitListViewModel.cs" />
+    <Compile Include="Models\InvoiceSample\ConditionSearchInvoiceSample.cs" />
+    <Compile Include="Models\InvoiceStatistical\InvoiceGift.cs" />
+    <Compile Include="Models\InvoiceStatistical\InvoiceStatistical.cs" />
+    <Compile Include="Models\InvoiceTemplateSample\InvoiceTemplateSampleName.cs" />
+    <Compile Include="Models\InvoiceTemplate\InvoiceTemplateViewModel.cs" />
+    <Compile Include="Models\Invoice\ApprovedAnnouncement.cs" />
+    <Compile Include="Models\Invoice\CheckInvoiceNoMaster.cs" />
+    <Compile Include="Models\Invoice\ConditionSearchCheckNumberInvoice.cs" />
+    <Compile Include="Models\Invoice\ConditionSearchInvoiceOfClient.cs" />
+    <Compile Include="Models\Invoice\ConditionSearchInvoiceDebts.cs" />
+    <Compile Include="Models\Invoice\ExportModelSumary.cs" />
+    <Compile Include="Models\Invoice\ExportOption.cs" />
+    <Compile Include="Models\Invoice\FooterConfig.cs" />
+    <Compile Include="Models\Invoice\InvoiceCkNumberExport.cs" />
+    <Compile Include="Models\Invoice\InvoiceClientSign.cs" />
+    <Compile Include="Models\Invoice\InvoiceDebts.cs" />
+    <Compile Include="Models\Announcement\AnnouncementMaster.cs" />
+    <Compile Include="Models\Invoice\InvoiceExport.cs" />
+    <Compile Include="Models\Invoice\InvoiceExportXmlModel.cs" />
+    <Compile Include="Models\Invoice\InvoiceExportModel.cs" />
+    <Compile Include="Models\Invoice\InvoiceInfo.cs" />
+    <Compile Include="Models\Invoice\InvoiceCheckDaily.cs" />
+    <Compile Include="Models\Invoice\InvoiceReleaseDate.cs" />
+    <Compile Include="Models\Invoice\InvoiceSendByMonth.cs" />
+    <Compile Include="Models\Invoice\NumberInvoiceUse.cs" />
+    <Compile Include="Models\Invoice\ResultValidDate.cs" />
+    <Compile Include="Models\Invoice\InvoiceDate.cs" />
+    <Compile Include="Models\Invoice_Sample\InvoiceSampleInfo.cs" />
+    <Compile Include="Models\Invoice_Sample\InvoiceSampleInfo_Edit.cs" />
+    <Compile Include="Models\LoginUser\LoginUserExport.cs" />
+    <Compile Include="Models\MasterData\ApprovedRowError.cs" />
+    <Compile Include="Models\MasterData\ResultApproved.cs" />
+    <Compile Include="Models\NoticeUseInvoiceDetail\NoticeUseInvoiceDetailInfo.cs" />
+    <Compile Include="Models\Portal\InvoiceExportPortal.cs" />
+    <Compile Include="Models\Portal\NotificationUsedInvoiceDetail.cs" />
+    <Compile Include="Models\Portal\PTClientAccountInfo.cs" />
+    <Compile Include="Models\Portal\PTAnnouncement.cs" />
+    <Compile Include="Models\Portal\PTClientInfo.cs" />
+    <Compile Include="Models\Portal\PTInvoice.cs" />
+    <Compile Include="Models\Portal\PTFooterInfo.cs" />
+    <Compile Include="Models\Portal\PTToken.cs" />
+    <Compile Include="Models\Portal\ReportInvoicesPortalView.cs" />
+    <Compile Include="Models\Product\ProductExport.cs" />
+    <Compile Include="Models\QuarztJob\ConditionSearchQuartzJob.cs" />
+    <Compile Include="Models\QuarztJob\QuarztJob.cs" />
+    <Compile Include="Models\RegisterTemplate\RegisterTemplateDenominator.cs" />
+    <Compile Include="Models\RegisterTemplate\RegisterTemplateSample.cs" />
+    <Compile Include="Models\ReleaseAnnouncement\AnnouncementsRelease.cs" />
+    <Compile Include="Models\ReleaseAnnouncement\ReleaseAnnouncementMaster.cs" />
+    <Compile Include="Models\ReleaseAnnouncement\ReleaseAnnouncementInfo.cs" />
+    <Compile Include="Models\ReleaseAnnouncement\StatusReleaseInvoice.cs" />
+    <Compile Include="Models\ReportCancelling\ApprovedReportCancelling.cs" />
+    <Compile Include="Models\Report\ConditionInvoiceUse.cs" />
+    <Compile Include="Models\Report\ReportHistoryXml.cs" />
+    <Compile Include="Models\Report\ReportInSixMonth.cs" />
+    <Compile Include="Models\Report\AnnouncementConverted.cs" />
+    <Compile Include="Models\Report\ReportInvoiceConverted.cs" />
+    <Compile Include="Models\Report\AnnouncementConvertedBoard.cs" />
+    <Compile Include="Models\Report\ReportInvoiceConvertedBoard.cs" />
+    <Compile Include="Models\Report\ReportGeneralInvoice.cs" />
+    <Compile Include="Models\Report\ReportInvoiceDetailGroupByTax.cs" />
+    <Compile Include="Models\Report\ReportInvoiceUsing.cs" />
+    <Compile Include="Models\Report\ReportMonth.cs" />
+    <Compile Include="Models\Report\ResultSignReportGeneral.cs" />
+    <Compile Include="Models\RoleFunction\UpdateRoleFunctionInfo.cs" />
+    <Compile Include="Models\RoleFunction\RoleFunctionInfo.cs" />
+    <Compile Include="Models\RoleGroup\AccountRoleInfo.cs" />
+    <Compile Include="Models\RoleGroup\ConditionSearchRole.cs" />
+    <Compile Include="Models\RoleGroup\RoleGroupView.cs" />
+    <Compile Include="Models\RoleGroup\UpdateUsersInRole.cs" />
+    <Compile Include="Models\RoleGroup\RoleGroupDetail.cs" />
+    <Compile Include="Models\ServiceJob\JobApprovedInvoice.cs" />
+    <Compile Include="Models\Signature\ConditionSearchCA.cs" />
+    <Compile Include="Models\Signature\ServerSignAnnounResult.cs" />
+    <Compile Include="Models\Signature\ServerSignResult.cs" />
+    <Compile Include="Models\Signature\SignatureExport.cs" />
+    <Compile Include="Models\SignDetailInfo\SignDetailInfo.cs" />
+    <Compile Include="Models\Signature\SignatureInfo.cs" />
+    <Compile Include="Models\FileSystemLog\FileSystemLogInfo.cs" />
+    <Compile Include="Models\SystemLog\ConditionSearchSystemLog.cs" />
+    <Compile Include="Models\SystemLog\SystemLogExport.cs" />
+    <Compile Include="Models\SystemLog\SaveSystemLog.cs" />
+    <Compile Include="Models\SystemLog\SystemLogInfo.cs" />
+    <Compile Include="Models\SystemSetting\ConditionSearchSystemSetting.cs" />
+    <Compile Include="Models\SystemSetting\InvoiceSystemSettingInfo.cs" />
+    <Compile Include="Models\SystemSetting\SystemSettingInfo.cs" />
+    <Compile Include="Models\RegisterTemplate\RegisterTemplateReport.cs" />
+    <Compile Include="Models\RegisterTemplate\RegisterTemplateCancelling.cs" />
+    <Compile Include="Models\RegisterTemplate\RegisterTempleteUseReport.cs" />
+    <Compile Include="Models\RegisterTemplate\RegisterTempleteUse.cs" />
+    <Compile Include="Models\ReleaseInvoice\ConditionSearchReleaseListDetail.cs" />
+    <Compile Include="Models\ReleaseInvoice\InvoicesReleaseDetail.cs" />
+    <Compile Include="Models\ReportCancelling\ReportCancellingDetail.cs" />
+    <Compile Include="Models\ReportCancelling\ReportCancellingInfo.cs" />
+    <Compile Include="Models\ReportCancelling\ReportCancellingMaster.cs" />
+    <Compile Include="Models\Invoice\InvoiceVerificationCode.cs" />
+    <Compile Include="Models\Invoice\InvoiceReleaseInfo.cs" />
+    <Compile Include="Models\Invoice\SendEmailVerificationCode.cs" />
+    <Compile Include="Models\Queue\QueueCreateFile.cs" />
+    <Compile Include="Models\InvoiceReleases\InvoiceReleasesTemplateInfo.cs" />
+    <Compile Include="Models\InvoiceTemplate\InvoiceTemplateInfo.cs" />
+    <Compile Include="Models\NoticeUseInvoiceDetail\InvoiceNumber.cs" />
+    <Compile Include="Models\ReleaseInvoice\InvoicesRelease.cs" />
+    <Compile Include="Models\Invoice\ApprovedInvoice.cs" />
+    <Compile Include="Models\ReleaseInvoice\StatusReleaseInvoice.cs" />
+    <Compile Include="Models\ReportManagement\ConditionReportSummary.cs" />
+    <Compile Include="Models\ReportManagement\ReportCombineExport.cs" />
+    <Compile Include="Models\ReportManagement\ReportCustomerExport.cs" />
+    <Compile Include="Models\ReportManagement\ReportCustomer.cs" />
+    <Compile Include="Models\ReportManagement\ReportSummaryExport.cs" />
+    <Compile Include="Models\Report\ConditionDebts.cs" />
+    <Compile Include="Models\Report\ReporDebts.cs" />
+    <Compile Include="Models\Report\ReporNotificationInvoice.cs" />
+    <Compile Include="Models\ReportManagement\ReportSummary.cs" />
+    <Compile Include="Models\Report\ReportListDebts.cs" />
+    <Compile Include="Models\Role\FunctionInfo.cs" />
+    <Compile Include="Models\Company\MyCompanyInfo.cs" />
+    <Compile Include="Models\Company\ConditionSearchCompany.cs" />
+    <Compile Include="Models\DataPermission\DataPermissionInfo.cs" />
+    <Compile Include="Models\Email\FileInformation.cs" />
+    <Compile Include="Models\Email\ReceiverNotification.cs" />
+    <Compile Include="Models\File\FileUploadInfo.cs" />
+    <Compile Include="Models\RegisterTemplate\TemplateAccepted.cs" />
+    <Compile Include="Models\RegisterTemplate\RegisterTemplateInfo.cs" />
+    <Compile Include="Models\RegisterTemplate\RegisterTemplateMaster.cs" />
+    <Compile Include="Models\InvoiceDetail\InvoiceDetailInfo.cs" />
+    <Compile Include="Models\RegisterTemplate\ConditionSearchRegisterTemplate.cs" />
+    <Compile Include="Models\InvoicePrint\ExportFileInfo.cs" />
+    <Compile Include="Models\InvoicePrint\InvoiceItem.cs" />
+    <Compile Include="Models\InvoicePrint\InvoicePrintInfo.cs" />
+    <Compile Include="Models\InvoicePrint\PrintConfig.cs" />
+    <Compile Include="Models\InvoiceReleases\InvoiceReleasesStatus.cs" />
+    <Compile Include="Models\CancellingInvoice\CancellingInvoiceInfo.cs" />
+    <Compile Include="Models\AdjustInvoice\ConditionSearchAdjustInvoice.cs" />
+    <Compile Include="Models\Invoice\SearchReplacedInvoice.cs" />
+    <Compile Include="Models\Invoice\InvoiceFile.cs" />
+    <Compile Include="Models\Invoice\Substitute_Invoice.cs" />
+    <Compile Include="Models\Invoice\UploadInvoice.cs" />
+    <Compile Include="Models\KeyStore\KeyStoreOfCompany.cs" />
+    <Compile Include="Models\CancellingInvoice\CancellingnvoiceMaster.cs" />
+    <Compile Include="Models\ReleaseInvoice\ConditionSearchReleaseInvoice.cs" />
+    <Compile Include="Models\ReleaseInvoice\ConditionSearchReleaseList.cs" />
+    <Compile Include="Models\ReleaseInvoice\ReleaseGroupInvoice.cs" />
+    <Compile Include="Models\Invoice\ConditionSearchInvoice.cs" />
+    <Compile Include="Models\Invoice\InvoiceMaster.cs" />
+    <Compile Include="Models\Invoice\InvoiceNo.cs" />
+    <Compile Include="Models\Invoice\InvoiceNote.cs" />
+    <Compile Include="Models\Payment\TypePaymentInfo.cs" />
+    <Compile Include="Models\ReleaseInvoice\ReleaseInvoiceInfo.cs" />
+    <Compile Include="Models\ReleaseInvoice\ReleaseInvoiceMaster.cs" />
+    <Compile Include="Models\ReleaseInvoice\ReleaseInvoices.cs" />
+    <Compile Include="Models\ReleaseInvoice\ReleaseListInvoice.cs" />
+    <Compile Include="Models\ReleaseInvoice\Result.cs" />
+    <Compile Include="Models\ReleaseInvoice\ResultRelease.cs" />
+    <Compile Include="Models\ReleaseInvoice\SendEmailRelease.cs" />
+    <Compile Include="Models\ReleaseInvoice\StatusRelease.cs" />
+    <Compile Include="Models\ReportCance\ConditionResultCancelInvoice.cs" />
+    <Compile Include="Models\ReportCance\NoticeCancelInvoice.cs" />
+    <Compile Include="Models\ReportCance\NoticePrintInvoice.cs" />
+    <Compile Include="Models\Report\ConditionReportByMonth.cs" />
+    <Compile Include="Models\Report\ConditionInvoiceBoard.cs" />
+    <Compile Include="Models\Report\ConditionReportDetailUse.cs" />
+    <Compile Include="Models\Report\ConditionReportCancelInvoice.cs" />
+    <Compile Include="Models\Report\ConditionReportUse.cs" />
+    <Compile Include="Models\Report\ReportInvoiceDetail.cs" />
+    <Compile Include="Models\Report\ReportListInvoice.cs" />
+    <Compile Include="Models\Report\ReportNoticeCancelInvoice.cs" />
+    <Compile Include="Models\Report\ReportSelfPrinted.cs" />
+    <Compile Include="Models\Report\ReporMonthlyBoard.cs" />
+    <Compile Include="Models\Report\ReportSituationInvoiceUsage.cs" />
+    <Compile Include="Models\Report\ReportUse.cs" />
+    <Compile Include="Models\SoftVendor\VendorInfo.cs" />
+    <Compile Include="Models\Summary\SummaryInvoice.cs" />
+    <Compile Include="Models\Tax\TaxInfo.cs" />
+    <Compile Include="Models\UserInvoice\ConditionSearchUseInvoice.cs" />
+    <Compile Include="Models\InvoiceReleasesDetail\InvoiceReleasesDetailInfo.cs" />
+    <Compile Include="Models\InvoiceReleases\InvoiceReleasesInfo.cs" />
+    <Compile Include="Models\InvoiceReleases\InvoiceReleasesMaster.cs" />
+    <Compile Include="Models\MasterData\FileImport.cs" />
+    <Compile Include="Models\MasterData\ImportConfig.cs" />
+    <Compile Include="Models\MasterData\ImportResult.cs" />
+    <Compile Include="Models\MasterData\ImportRowError.cs" />
+    <Compile Include="Models\MasterData\ResultImport.cs" />
+    <Compile Include="Models\Client\ClientAddInfo.cs" />
+    <Compile Include="Models\Client\ConditionSearchClient.cs" />
+    <Compile Include="Models\Company\CompanyInfo.cs" />
+    <Compile Include="Models\Company\MasterCompanyInfo.cs" />
+    <Compile Include="Models\Company\UpdateloadFileConfig.cs" />
+    <Compile Include="Models\Email\Email.cs" />
+    <Compile Include="Models\Email\EmailConfig.cs" />
+    <Compile Include="Models\Email\ReceiverInfo.cs" />
+    <Compile Include="Models\GlobalConfig\EmailConfig.cs" />
+    <Compile Include="Models\Message\ApiResult.cs" />
+    <Compile Include="Models\InvoiceReleases\ConditionSearchInvoiConclude.cs" />
+    <Compile Include="Models\NoticeUseInvoiceDetail\UseInvoiceDetailInfo.cs" />
+    <Compile Include="Models\UserInvoice\UseInvoiceInfo.cs" />
+    <Compile Include="Models\UserInvoice\NotificeUseInvoiceMaster.cs" />
+    <Compile Include="Models\Product\ConditionSearchProduct.cs" />
+    <Compile Include="Models\Product\ProductInfo.cs" />
+    <Compile Include="Models\Role\RoleDetail.cs" />
+    <Compile Include="Models\TaxDepartment\TaxDepartmentInfo.cs" />
+    <Compile Include="Models\User\ConditionSearchUser.cs" />
+    <Compile Include="Models\User\LoginInfo.cs" />
+    <Compile Include="Models\User\RoleLevel.cs" />
+    <Compile Include="Models\GlobalConfig\SessionConfig.cs" />
+    <Compile Include="Models\User\UserSessionInfo.cs" />
+    <Compile Include="Models\ValidatorInvoice\ValidatorResult.cs" />
+    <Compile Include="Models\WorkingCalendar\FullYearWorkingCalendarDAO.cs" />
+    <Compile Include="Models\WorkingCalendar\WorkingCalendarDAO.cs" />
+    <Compile Include="Models\WorkingCalendar\WorkingCalendarDTO.cs" />
+    <Compile Include="PDF\InvoiceFile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\DateConverter.cs" />
+    <Compile Include="Utils\JsonBoolConverter.cs" />
+    <Compile Include="Utils\JsonDateConverterString.cs" />
+    <Compile Include="Utils\JsonDateConverter.cs" />
+    <Compile Include="Utils\JsonDateTimeConverterString.cs" />
+    <Compile Include="Utils\JsonEnumConverter.cs" />
+    <Compile Include="Utils\JsonIntConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="BitMiracle.Docotic.Pdf, Version=5.7.9231.0, Culture=neutral, PublicKeyToken=221650e173990c07, processorArchitecture=MSIL">
+      <HintPath>..\packages\BitMiracle.Docotic.Pdf.5.7.9231\lib\net40\BitMiracle.Docotic.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.8.1.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.8.1\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="HiQPdf.Free">
+      <HintPath>..\DLL\HiQPdf.Free.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ionic.Zip.1.9.1.8\lib\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\packages\iTextSharp.5.5.12\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit, Version=2.7.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailKit.2.7.0\lib\net45\MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MimeKit, Version=2.8.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <HintPath>..\packages\MimeKit.2.8.0\lib\net45\MimeKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.2.0\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>..\DLL\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess.EntityFramework">
+      <HintPath>..\DLL\Oracle.ManagedDataAccess.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Select.HtmlToPdf">
+      <HintPath>..\DLL\Select.HtmlToPdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Doc, Version=7.2.8.19040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.4.3.1\lib\net40\Spire.Doc.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=5.2.17.19040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.4.3.1\lib\net40\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.XLS, Version=9.2.16.19040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.4.3.1\lib\net40\Spire.XLS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="Z.EntityFramework.Extensions, Version=4.0.35.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Z.EntityFramework.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InvoiceServer.Common\InvoiceServer.Common.csproj">
+      <Project>{70f546f0-8beb-4d65-b28b-d3dd24b7f500}</Project>
+      <Name>InvoiceServer.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InvoiceServer.DataOracle\InvoiceServer.DataOracle.csproj">
+      <Project>{04b1253d-fff0-4b26-84c8-f36eb51c89a3}</Project>
+      <Name>InvoiceServer.DataOracle</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

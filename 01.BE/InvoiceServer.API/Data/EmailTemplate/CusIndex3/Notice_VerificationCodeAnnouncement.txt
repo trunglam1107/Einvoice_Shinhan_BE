@@ -1,0 +1,66 @@
+{BankName} - $minutesType	(E-invoice Minutes)
+	<table class="tableHeader" style="width:625px; height:62px; border-bottom: 1px solid;">
+		<tr>
+			<td>
+				<img src='$logo' class="logoMail" width="167" style="width:167px; height:auto">
+			</td>
+			<td style="font-size: 12px;font-style: italic;text-align: right;">
+				<span >
+					{BankAddress}
+				</span>
+				<br>
+				<span >
+					{BankAddressEn}
+				</span>
+			</td>
+		</tr>
+	</table>
+	<br><b style ="font-size: 13px">Kính gửi Quý khách hàng,</b><br>
+	<p style ="font-size: 13px">{Tnhh}{BankName} trân trọng gửi đến Quý khách Biên bản như sau:</p>
+	<table class="tableMail" style="border-collapse: collapse; border: 1px solid black; width: 620px; text-align: center; font-size: 13px; font-weight: bold;">
+		<tr>
+			<td style="border: 1px solid black;">Số Hiệu Biên Bản</td>
+			<td style="border: 1px solid black;">Ngày biên bản</td>
+			<td style="border: 1px solid black;">Loại Biên Bản</td>
+			<td style="border: 1px solid black; visibility: {IsVisibleInvoiceChangedNumber};">Hóa đơn điều chỉnh</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid black; color:#00529b">$minutesNumber</td>
+			<td style="border: 1px solid black; color:#00529b">@minutesDate</td>
+			<td style="border: 1px solid black; color:#00529b">$minutesType</td>
+			<td style="border: 1px solid black; color:#00529b; visibility: {IsVisibleInvoiceChangedNumber};">{AdjustedInvoiceNumber}</td>
+		</tr>
+	</table>
+	<br>
+	<p style ="font-size: 13px; width:625px;">Trong trường hợp Quý khách có bất kỳ thắc mắc hoặc yêu cầu nào liên quan đến Hóa đơn điện tử, vui lòng liên hệ nhân viên phụ trách tại Chi nhánh thực hiện giao dịch để được hỗ trợ. <p/>
+	<p style ="font-size: 13px">Trân trọng,<p/>
+	<b class="Italic" style="font-style:italic;font-size: 13px">{Tnhh}{BankName}</b>
+	<p class="line" style="width:625px;border-top: 1px solid black;">&nbsp;</p>
+	
+	<b style ="font-size: 13px;">Dear Valued Customer, </b>
+	<p style ="font-size: 13px">{BankNameEn} respectfully provides you the <b>Minutes on E-invoice</b> for your signature:</p>
+	<table class="tableMail" style="border-collapse: collapse; border: 1px solid black; width: 620px; text-align: center; font-size: 13px; font-weight: bold;">
+		<tr>
+			<td style="border: 1px solid black;">Minutes Number</td>
+			<td style="border: 1px solid black;">Date</td>
+			<td style="border: 1px solid black;">Type of Minutes</td>
+			<td style="border: 1px solid black; visibility: {IsVisibleInvoiceChangedNumber};">Adjusted invoice</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid black; color:#00529b">$minutesNumber</td>
+			<td style="border: 1px solid black; color:#00529b">@minutesDate</td>
+			<td style="border: 1px solid black; color:#00529b">$minutesType</td>
+			<td style="border: 1px solid black; color:#00529b; visibility: {IsVisibleInvoiceChangedNumber};">{AdjustedInvoiceNumber}</td>
+		</tr>
+	</table>
+	
+	<br>
+	
+	<p style ="font-size: 13px; width:625px;">Should you have any question or request relating to your E-invoice, please contact teller in charge of the transaction office, where the transaction incurs for our further support.<p/>
+	<p style ="font-size: 13px">Thank you,<p/>
+	<b class="Italic" style="font-style:italic; font-size: 13px">{BankNameEn}</b>
+	<br>
+	<div class="Desc" style="width:625px; background-color: #fdf4ef; padding: 8px; font-size: 12px">
+		<p>Thư điện tử này được gửi ra từ hệ thống tự động, Quý khách vui lòng không trả lời thư điện tử này. Thư điện tử này cùng các tài liệu đính kèm chỉ dành cho một hoặc các cá nhân, tổ chức cụ thể. Nếu Quý khách không phải là người nhận được chỉ định, Quý khách vui lòng xóa thư này đồng thời gọi Tổng đài {BankPhone} để thông báo cho người gửi.</p>
+		<p class="Italic" style="font-style: italic">This is an auto-generated email, please do not reply to this email. This e-mail and any attachment to it is only for the usesage of the intended recipient. If you are not the addressee, please delete it immediately and notify the sender by call our Contact Center {BankPhone}.</p>
+	</div>

@@ -1,0 +1,15 @@
+﻿Thông báo về việc điều chỉnh thông tin hóa đơn
+
+<p>Kính gửi: $CustomerName</p>
+<p>Xin trân trọng cảm ơn Quý khách hàng đã sử dụng dịch vụ của UNIT-VIETNAME.</p>
+<p>$CompanyName vừa điều chỉnh hóa đơn của Quý khách hàng. </p>
+<p>Nội dung:Điều chỉnh thông tin cho hóa đơn số: $invNumber thuộc mẫu: $pattern và ký hiệu: $serial</p>
+<p>Hóa đơn được phát hành để điều chỉnh cho hóa đơn cũ có số: $NewInvMumber thuộc mẫu: $Newpattern và ký hiệu: $NewSerial</p>
+<p>Để xem biên bản thay thế, Quý khách vui lòng dowload: $DestroyRecordUrl </p> 
+<p>Ðể xem chi tiết hóa đơn, Quý khách hàng vui lòng truy cập địa chỉ http://vdc2.e-invoice.vn</p>
+</br>
+</br>
+<p>Có bất kỳ vướng mắc nào xin liên hệ với chúng tôi.</p>
+<p>Số điện thoại	: (08)3824 8888 </p>
+<p>Email		: hoadondientu@unit-ca.vn</p>
+</br>

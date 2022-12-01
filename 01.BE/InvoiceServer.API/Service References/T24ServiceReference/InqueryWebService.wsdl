@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://inquery.bidc.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="InqueryWebService" targetNamespace="http://inquery.bidc.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:ssp="http://schemas.sun.com/2006/03/wss/server" xmlns:sunwsp="http://java.sun.com/xml/ns/wsit/policy" wsu:Id="InqueryWebServicePortBindingPolicy">
+    <sp:SignedEncryptedSupportingTokens>
+      <wsp:Policy>
+        <sp:UsernameToken sp:IncludeToken="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702/IncludeToken/AlwaysToRecipient">
+          <wsp:Policy>
+            <sp:WssUsernameToken10 />
+          </wsp:Policy>
+        </sp:UsernameToken>
+      </wsp:Policy>
+    </sp:SignedEncryptedSupportingTokens>
+    <sp:SymmetricBinding>
+      <wsp:Policy>
+        <sp:AlgorithmSuite>
+          <wsp:Policy>
+            <sp:Basic128 />
+          </wsp:Policy>
+        </sp:AlgorithmSuite>
+        <sp:IncludeTimestamp />
+        <sp:Layout>
+          <wsp:Policy>
+            <sp:Strict />
+          </wsp:Policy>
+        </sp:Layout>
+        <sp:OnlySignEntireHeadersAndBody />
+        <sp:ProtectionToken>
+          <wsp:Policy>
+            <sp:X509Token sp:IncludeToken="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702/IncludeToken/Never">
+              <wsp:Policy>
+                <sp:RequireIssuerSerialReference />
+                <sp:WssX509V3Token10 />
+              </wsp:Policy>
+            </sp:X509Token>
+          </wsp:Policy>
+        </sp:ProtectionToken>
+      </wsp:Policy>
+    </sp:SymmetricBinding>
+    <sp:Wss11>
+      <wsp:Policy>
+        <sp:MustSupportRefEncryptedKey />
+        <sp:MustSupportRefIssuerSerial />
+        <sp:MustSupportRefThumbprint />
+      </wsp:Policy>
+    </sp:Wss11>
+    <wsam:Addressing />
+  </wsp:Policy>
+  <wsp:Policy xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" wsu:Id="InqueryWebServicePortBinding_hello_Input_Policy">
+    <sp:EncryptedParts>
+      <sp:Body />
+    </sp:EncryptedParts>
+    <sp:SignedParts>
+      <sp:Body />
+      <sp:Header Namespace="http://www.w3.org/2005/08/addressing" Name="ReplyTo" />
+      <sp:Header Namespace="http://www.w3.org/2005/08/addressing" Name="To" />
+      <sp:Header Namespace="http://www.w3.org/2005/08/addressing" Name="From" />
+      <sp:Header Namespace="http://docs.oasis-open.org/ws-rx/wsrm/200702" Name="AckRequested" />
+      <sp:Header Namespace="http://docs.oasis-open.org/ws-rx/wsrm/200702" Name="CreateSequence" />
+      <sp:Header Namespace="http://docs.oasis-open.org/ws-rx/wsrm/200702" Name="Sequence" />
+      <sp:Header Namespace="http://www.w3.org/2005/08/addressing" Name="MessageID" />
+      <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
+      <sp:Header Namespace="http://docs.oasis-open.org/ws-rx/wsrm/200702" Name="SequenceAcknowledgement" />
+      <sp:Header Namespace="http://www.w3.org/2005/08/addressing" Name="Action" />
+      <sp:Header Namespace="http://www.w3.org/2005/08/addressing" Name="RelatesTo" />
+    </sp:SignedParts>
+  </wsp:Policy>
+  <wsp:Policy xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" wsu:Id="InqueryWebServicePortBinding_hello_Output_Policy">
+    <sp:EncryptedParts>
+      <sp:Body />
+    </sp:EncryptedParts>
+    <sp:SignedParts>
+      <sp:Body />
+      <sp:Header Namespace="http://www.w3.org/2005/08/addressing" Name="ReplyTo" />
+      <sp:Header Namespace="http://www.w3.org/2005/08/addressing" Name="To" />
+      <sp:Header Namespace="http://www.w3.org/2005/08/addressing" Name="From" />
+      <sp:Header Namespace="http://docs.oasis-open.org/ws-rx/wsrm/200702" Name="AckRequested" />
+      <sp:Header Namespace="http://docs.oasis-open.org/ws-rx/wsrm/200702" Name="CreateSequence" />
+      <sp:Header Namespace="http://docs.oasis-open.org/ws-rx/wsrm/200702" Name="Sequence" />
+      <sp:Header Namespace="http://www.w3.org/2005/08/addressing" Name="MessageID" />
+      <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
+      <sp:Header Namespace="http://docs.oasis-open.org/ws-rx/wsrm/200702" Name="SequenceAcknowledgement" />
+      <sp:Header Namespace="http://www.w3.org/2005/08/addressing" Name="Action" />
+      <sp:Header Namespace="http://www.w3.org/2005/08/addressing" Name="RelatesTo" />
+    </sp:SignedParts>
+  </wsp:Policy>
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://xwssecurityserver:8085/BIDCWebServices/InqueryWebService?xsd=1" namespace="http://inquery.bidc.com/" />
+    </xsd:schema>
+  </types>
+  <message name="InqueryService">
+    <part name="parameters" element="tns:InqueryService" />
+  </message>
+  <message name="InqueryServiceResponse">
+    <part name="parameters" element="tns:InqueryServiceResponse" />
+  </message>
+  <message name="hello">
+    <part name="parameters" element="tns:hello" />
+  </message>
+  <message name="helloResponse">
+    <part name="parameters" element="tns:helloResponse" />
+  </message>
+  <portType name="InqueryWebService">
+    <operation name="InqueryService">
+      <input wsam:Action="http://inquery.bidc.com/InqueryWebService/InqueryServiceRequest" message="tns:InqueryService" />
+      <output wsam:Action="http://inquery.bidc.com/InqueryWebService/InqueryServiceResponse" message="tns:InqueryServiceResponse" />
+    </operation>
+    <operation name="hello">
+      <input wsam:Action="http://inquery.bidc.com/InqueryWebService/helloRequest" message="tns:hello" />
+      <output wsam:Action="http://inquery.bidc.com/InqueryWebService/helloResponse" message="tns:helloResponse" />
+    </operation>
+  </portType>
+  <binding name="InqueryWebServicePortBinding" type="tns:InqueryWebService">
+    <wsp:PolicyReference URI="#InqueryWebServicePortBindingPolicy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="InqueryService">
+      <soap:operation soapAction="" />
+      <input>
+        <wsp:PolicyReference URI="#InqueryWebServicePortBinding_hello_Input_Policy" />
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <wsp:PolicyReference URI="#InqueryWebServicePortBinding_hello_Output_Policy" />
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="hello">
+      <soap:operation soapAction="" />
+      <input>
+        <wsp:PolicyReference URI="#InqueryWebServicePortBinding_hello_Input_Policy" />
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <wsp:PolicyReference URI="#InqueryWebServicePortBinding_hello_Output_Policy" />
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="InqueryWebService">
+    <port name="InqueryWebServicePort" binding="tns:InqueryWebServicePortBinding">
+      <soap:address location="http://xwssecurityserver:8085/BIDCWebServices/InqueryWebService" />
+    </port>
+  </service>
+</definitions>

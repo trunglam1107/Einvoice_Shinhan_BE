@@ -1,0 +1,777 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-16">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Hóa Đơn Điện Tử</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <style type="text/css" media="all">
+        body {
+            margin: 0
+        }
+
+        p {
+            margin: 0 0
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        @page {
+            margin-top: 40px;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-bottom: 40px;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        .text-left {
+            text-align: left !important;
+        }
+
+        .text-right {
+            text-align: right !important;
+        }
+
+        #hangHoa {
+            padding-top: 15px;
+        }
+
+            #hangHoa table tr td,
+            #hangHoa table tr th {
+                border: 1px solid #000000;
+            }
+
+        .row {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            clear: both;
+            display: block;
+        }
+
+            .row .col1,
+            .row .col2,
+            .row .col3,
+            .row .col4,
+            .row .col5,
+            .row .col6,
+            .row .col7,
+            .row .col8,
+            .row .col9,
+            .row .col10,
+            .row .col11,
+            .row .col12,
+            .row .col13,
+            .row .col14,
+            .row .col15,
+            .row .col16,
+            .row .col17,
+            .row .col18,
+            .row .col20,
+            .col33-percent {
+                display: block;
+                float: left;
+                padding: 0;
+                margin: 0;
+            }
+
+            .row:after {
+                clear: both
+            }
+
+            .row:after,
+            .row:before {
+                content: "";
+                display: table;
+                line-height: 0
+            }
+
+            .row .col1 {
+                width: 5%;
+            }
+
+            .row .col2 {
+                width: 10%;
+            }
+
+        .col3 {
+            width: 15%;
+        }
+
+        .col4 {
+            width: 20%;
+        }
+
+        .col5 {
+            width: 25%;
+        }
+
+        .col6 {
+            width: 30%;
+        }
+
+        .col7 {
+            width: 35%;
+        }
+
+        .col8 {
+            width: 40%;
+        }
+
+        .col9 {
+            width: 45%;
+        }
+
+        .row .col10 {
+            width: 50%;
+        }
+
+        .row .col11 {
+            width: 55%;
+        }
+
+        .row .col12 {
+            width: 60%;
+        }
+
+        .col13 {
+            width: 65%;
+        }
+
+        .col14 {
+            width: 70%;
+        }
+
+        .col15 {
+            width: 75%;
+        }
+
+        .col16 {
+            width: 80%;
+        }
+
+        .col17 {
+            width: 85%;
+        }
+
+        .col18 {
+            width: 90%;
+        }
+
+        .col19 {
+            width: 95%;
+        }
+
+        .col20 {
+            width: 100%;
+        }
+
+        .col33-percent {
+            width: 33%;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .fixPage {
+            display: none;
+        }
+
+        .container {
+            width: 18cm;
+            font-size: 15px;
+            line-height: 25px;
+            font-family: Times New Roman;
+            padding: 0px;
+            border-radius: 0px;
+            margin: 0 auto;
+            position: relative;
+            display: block;
+            color: #000;
+        }
+
+        /*Tiếng anh thì cho font nhỏ hơn 1 size*/
+        .size-14 {
+            font-size: 13px;
+        }
+
+        .line-height-container {
+            line-height: 22px;
+        }
+
+        .breackPage {
+            page-break-after: always;
+        }
+
+        .displayPage {
+            padding: 5px 0px;
+        }
+
+        #footerFix {
+            display: table;
+        }
+
+        .line {
+            border-top: 1px solid #000;
+            margin: 3px 0 !important;
+            line-height: 4px !important
+        }
+
+        .table {
+            border-spacing: 0;
+            width: 100%;
+            margin-left: px;
+            margin-top: 3px;
+            border-top: 1px solid #000;
+            border-bottom: 0px solid #000;
+            font-size: 15px;
+            color: #000;
+        }
+
+        .table {
+            border-style: solid solid solid solid;
+            border-width: 1px 1px 1px 1px;
+            border-color: black;
+        }
+
+            .table th {
+                padding: 2px;
+                text-align: center;
+            }
+
+            .table th {
+                border-bottom: 1px solid #000;
+                font-weight: 700;
+                border-left: 1px solid #000;
+            }
+
+                .table th:last-child {
+                    border-right: 1px solid #000
+                }
+
+            .table tbody tr th:last-child {
+                border-right: 0px solid #000
+            }
+
+            .table tbody tr th:first-child {
+                border-left: 0px solid #000
+            }
+
+            .table th {
+                line-height: 19px
+            }
+
+            .table td {
+                padding: 2px;
+                text-align: left;
+                vertical-align: top;
+                border-left: 1px solid #000
+            }
+
+            .table td {
+                border-top: 1px solid #DDD
+            }
+
+            .table tbody tr td:last-child {
+                border-right: 0px solid #000
+            }
+
+            .table tbody tr td:first-child {
+                border-left: 0px solid #000
+            }
+
+            <!-- .table tbody tr:last-child > td {
+                --> <!--
+                border-top: 1px solid #000;
+                --> <!--
+            }
+
+        --> .table-all-border {
+            border-spacing: 0;
+            width: 100%
+        }
+
+            .table-all-border td {
+                padding: 2px;
+                border-left: 1px solid #000;
+                border-top: 1px solid #000
+            }
+
+            .table-all-border tbody tr td:last-child {
+                border-right: 1px solid #000
+            }
+
+            .table-all-border tbody tr:last-child > td {
+                border-top: 1px solid #000;
+            }
+
+        .table td {
+            line-height: 24px
+        }
+
+        .invName {
+            text-align: center;
+            font-size: 16px;
+            line-height: 25px;
+            font-weight: 700;
+            margin: 0 0 3px;
+            text-transform: uppercase
+        }
+
+        /*Tiếng anh thì cho font nhỏ hơn 1 size*/
+        .size-15 {
+            font-size: 15px;
+        }
+
+        .boderTop {
+            border-top: 1px solid #000 !important;
+        }
+
+        .phathanh {
+            position: absolute;
+            opacity: 0.8;
+            filter: alpha(opacity=100);
+            top: 40%;
+            left: 30%;
+            width: 300px;
+            height: auto;
+            z-index: 1;
+            background: none;
+        }
+
+        .TitleHD {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 900;
+            font-family: time new roman;
+        }
+
+        .boderBot {
+            border-bottom: 1px solid #000 !important;
+        }
+
+        .addition-info p {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .size-13 {
+            font-size: 13px;
+        }
+
+        .f-weight-nomal {
+            font-weight: normal;
+        }
+
+        .vat-rate {
+            display: inline-block;
+        }
+
+        .vat-amount {
+            display: inline-block;
+            float: right;
+        }
+
+        .page-container {
+            height: 1050px;
+            margin-top: 75px;
+            /*border: 1px solid black*/
+        }
+
+            .page-container:nth-child(1) {
+                margin-top: 25px !important;
+            }
+    </style>
+    <style>
+        .check-box {
+            display: inline-block;
+            border: 2px solid black;
+            width: 7px;
+            height: 7px;
+            position: relative;
+        }
+
+        .checkmark:after,
+        .val-1 .opt-1:after,
+        .val-2 .opt-2:after,
+        .val-3 .opt-3:after,
+        .val-4 .opt-4:after,
+        .val-5 .opt-5:after,
+        .val-6 .opt-6:after {
+            content: "";
+            position: absolute;
+            left: 2px;
+            top: 0px;
+            width: 2px;
+            height: 5px;
+            border: solid black;
+            border-width: 0 1px 1px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .check-box-mg {
+            margin-left: 10px
+        }
+
+
+        .tbc-1st,
+        .tbc-2nd,
+        .tbc-3rd,
+        .tbc-4th,
+        .tbc-5th,
+        .tbc-6th {
+            width: 4cm;
+        }
+    </style>
+</head>
+
+<body style="font-size:10px;margin-left:5px; margin-top:2px; padding-top: 20px;">
+    <div style="width: 21cm;">
+        <div class="container row page-container">
+
+
+            <!-- {HeaderInvoice} -->
+            <div class="row" style="line-height:27px">
+                <!-- Branch info -->
+                <div class="col20 text-right line-height-container" style="font-size: 12px">
+                    <strong>Mẫu số: 01ĐKTĐ/HĐĐT</strong>
+                </div>
+                <div class="col20" style="margin: 5px;"></div>
+
+                <!-- Invoice's info -->
+                <div class="col20 text-center" style="line-height:17px">
+                    <strong> CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM </strong><br>
+                    <strong> Độc lập - Tự do - Hạnh phúc </strong>
+                </div>
+
+                <div class="col20 text-center">
+                    <strong>------------------</strong>
+                </div>
+
+
+                <div class="col20 text-center" style="line-height:17px">
+                    <strong> TỜ KHAI </strong><br>
+                    <strong> Đăng ký/thay đổi thông tin sử dụng hóa đơn điện tử </strong><br>
+                    <P id="declarationType1"></P>
+                </div>
+
+            </div>
+            <br>
+            <div class="row" style="padding-left:5px">
+                <div class="col5">Tên người nộp thuế:</div>
+                <div class="col15">{TaxPayerName}&nbsp</div>
+
+                <div class="col5">Mã số thuế:</div>
+                <div class="col15">{TaxCode}&nbsp</div>
+
+                <div class="col5">Cơ quan thuế quản lý:</div>
+                <div class="col15">{TaxDepartmentName}&nbsp</div>
+            </div>
+
+            <div class="row" style="padding-left:5px">
+                <div class="col5">Người liên hệ:</div>
+                <div class="col7">{PeronalContact} </div>
+                <!--&nbsp-->
+                <!--<div class="col8">Điện thoại liên hệ: </div>-->
+            </div>
+            <div class="row" style="padding-left:5px">
+                <div class="col5">Điện thoại liên hệ:</div>
+                <div class="col7">{Tel1} </div>
+            </div>
+            <div class="row" style="padding-left:5px">
+                <div class="col5">Địa chỉ liên hệ:</div>
+                <div class="col15">{Address}</div>
+                <!--&nbsp-->
+
+            </div>
+            <div class="row" style="padding-left:5px">
+                <div class="col5">Thư điện tử: </div>
+                <div class="col7">{Email}</div>
+            </div>
+            <div style="padding-left:5px; text-align:justify">
+                Theo Nghị định số 123/2020/NĐ-CP ngày 19 tháng 10 năm 2020 của Chính phủ, chúng tôi thuộc đối tượng
+                sử dụng hóa đơn điện tử. Chúng tôi&nbsp;<span id="declarationType2"></span>&nbsp;thông tin đã đăng ký với cơ quan thuế về việc sử dụng
+                hóa đơn điện tử như sau:
+            </div>
+
+            <div style="padding-left:5px; font-weight:800">
+                1. Hình thức hóa đơn:
+            </div>
+            <!-- val -->
+            <div class="row val-{HTHDon}" style="padding-left:5px">
+                <div class="col20">
+                    <div class="check-box check-box-mg opt-1"></div>
+                    <span>Có mã của cơ quan thuế</span>
+                </div>
+                <div class="col20">
+                    <div class="check-box check-box-mg opt-2"></div>
+                    <span>Không có mã của cơ quan thuế</span>
+                </div>
+            </div>
+
+            <div style="padding-left:5px; font-weight:800">
+                2. Hình thức gửi dữ liệu hóa đơn điện tử:
+            </div>
+            <div style="padding-left:5px">
+                a. Trường hợp sử dụng hóa đơn điện tử có mã không phải trả tiền dịch vụ theo khoản 1 Điều 14 của Nghị định:
+            </div>
+            <!-- val -->
+            <div class="val-{HTGDLHDDT}">
+                <div class="row" style="padding-left:5px">
+                    <div class="col20">
+                        <div class="check-box check-box-mg opt-1"></div>
+                        <span>
+                            Doanh nghiệp nhỏ và vừa, hợp tác xã, hộ, cá nhân kinh doanh tại địa bàn có điều kiện kinh tế xã hội khó
+                            khăn, địa bàn có điều kiện kinh tế xã hội đặc biệt khó khăn.
+                        </span>
+                    </div>
+                    <div class="col20">
+                        <div class="check-box check-box-mg opt-2"></div>
+                        <span>
+                            Doanh nghiệp nhỏ và vừa khác theo đề nghị của Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương gửi
+                            Bộ Tài chính trừ doanh nghiệp hoạt động tại các khu kinh tế, khu công nghiệp, khu công nghệ cao.
+                        </span>
+                    </div>
+                </div>
+                <div style="padding-left:5px">
+                    b. Trường hợp sử dụng hóa đơn điện tử không có mã của cơ quan thuế:
+                </div>
+                <div class="row" style="padding-left:5px">
+                    <div class="col20">
+                        <div class="check-box check-box-mg opt-3"></div>
+                        <span>Chuyển dữ liệu hóa đơn điện tử trực tiếp đến cơ quan thuế (điểm b1, khoản 3, Điều 22 của Nghị định).</span>
+                    </div>
+                    <div class="col20">
+                        <div class="check-box check-box-mg opt-4"></div>
+                        <span>Thông qua tổ chức cung cấp dịch vụ hóa đơn điện tử (điểm b2, khoản 3, Điều 22 của Nghị định).</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="padding-left:5px; font-weight:800">
+                3. Phương thức chuyển dữ liệu hóa đơn điện tử:
+            </div>
+            <!-- val -->
+            <div class="row val-{PThuc}" style="padding-left:5px">
+                <div class="col20">
+                    <div class="check-box check-box-mg opt-1"></div>
+                    <span>Chuyển đầy đủ nội dung từng hóa đơn.</span>
+                </div>
+                <div class="col20">
+                    <div class="check-box check-box-mg opt-2"></div>
+                    <span>Chuyển theo bảng tổng hợp dữ liệu hóa đơn điện tử (điểm a1, khoản 3, Điều 22 của Nghị định).</span>
+                </div>
+            </div>
+
+            <div style="padding-left:5px; font-weight:800">
+                4. Loại hóa đơn sử dụng:
+            </div>
+            <!-- val -->
+            <div class="row val-{LHDSDung}" style="padding-left:5px">
+                <div class="col20">
+                    <div class="check-box check-box-mg opt-1"></div>
+                    <span>Hóa đơn GTGT</span>
+                </div>
+                <div class="col20">
+                    <div class="check-box check-box-mg opt-2"></div>
+                    <span>Hóa đơn bán hàng</span>
+                </div>
+
+                <div class="col20">
+                    <div class="check-box check-box-mg opt-3"></div>
+                    <span>Hóa đơn bán tài sản công</span>
+                </div>
+                <div class="col20">
+                    <div class="check-box check-box-mg opt-4"></div>
+                    <span>Hóa đơn bán hàng dự trữ quốc gia</span>
+                </div>
+                <div class="col20">
+                    <div class="check-box check-box-mg opt-5"></div>
+                    <span>Các loại hóa đơn khác</span>
+                </div>
+                <div class="col20">
+                    <div class="check-box check-box-mg opt-6"></div>
+                    <span>Các chứng từ được in, phát hành, sử dụng và quản lý như hóa đơn</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="startContainer" class="container row page-container">
+            <div class="col20" style="border: 1px solid black; box-sizing: border-box; font-weight:800">
+                5. Danh sách chứng thư số sử dụng:
+            </div>
+            <table class="table table-bordered table-condensed">
+                <caption> </caption>
+                <tbody>
+                    <tr class="thead" style="">
+                        <th class="tbc-1st" rowspan="2" id="header1" style="border-left:0px; width:1cm">STT</th>
+                        <th class="tbc-2nd" rowspan="2" id="header2" class="" style="width: 4cm;">Tên tổ chức cơ quan chứng thực/cấp/công nhận chữ ký số, chữ ký điện tử</th>
+                        <th class="tbc-3rd" rowspan="2" id="header3" style="width: 4cm;">Số sê-ri chứng thư </th>
+                        <th colspan="2" id="header4" style="width: 4cm;">Thời hạn sử dụng chứng thư số</th>
+                        <th class="tbc-6th" rowspan="2" id="header5" style="width: 4cm;">Hình thức đăng ký (Thêm mới, gia hạn, ngừng sử dụng)</th>
+                    </tr>
+                    <tr>
+                        <th class="tbc-4th" id="header6" style="width: 4cm;border-left: 1px solid #000;">Từ ngày</th>
+                        <th class="tbc-5th" id="header7" style="width: 4cm;">Đến ngày</th>
+                    </tr>
+
+                    <!-- <tr style="text-align:center;"> -->
+                    <!-- <td class="tbc-1st" style="text-align:center;">1</td> -->
+                    <!-- <td class="tbc-2nd" style="text-align:center;">Tên tổ chức cơ quan chứng thực/cấp/công nhận chữ ký số, chữ ký điện tử</td> -->
+                    <!-- <td class="tbc-3rd" style="text-align:center;">3</td> -->
+                    <!-- <td class="tbc-4th" style="text-align:center;">4</td> -->
+                    <!-- <td class="tbc-5th" style="text-align:center;">5</td> -->
+                    <!-- <td class="tbc-6th" style="text-align:center;">6</td> -->
+                    <!-- </tr>				 -->
+                    {ReleaseInfoRows}
+
+                    <!-- {ContentInvoice} -->
+                    <!-- {details} -->
+                    <!-- {contentinvoice} -->
+                    <!-- {footerinvoice} -->
+
+                </tbody>
+            </table>
+            <div class="col20" style="border: 1px solid black; box-sizing: border-box; font-weight:800">
+                6. Đăng ký ủy nhiệm lập hóa đơn:
+            </div>
+            <table class="table table-bordered table-condensed">
+                <caption> </caption>
+                <tbody>
+                    <tr class="thead" style="">
+                        <th class="tbc-1st" id="header1" style="border-left:0px; width:1cm">STT</th>
+                        <th class="tbc-2nd" id="header2" style="width: 4cm;">Tên loại hóa đơn ủy nhiệm</th>
+                        <th class="tbc-3rd" id="header3" style="width: 4cm;">Ký hiệu mẫu hóa đơn</th>
+                        <th class="tbc-4th" id="header4" style="width: 4cm;">Ký hiệu hóa đơn ủy nhiệm</th>
+                        <th class="tbc-6th" id="header5" style="width: 4cm;">Tên tổ chức được ủy nhiệm</th>
+                        <th class="tbc-4th" id="header6" style="width: 4cm;">Mục đích ủy nhiệm</th>
+                        <th class="tbc-5th" id="header7" style="width: 4cm;">Thời hạn ủy nhiệm</th>
+                        <th class="tbc-4th" id="header8" style="width: 4cm;">Phương thức thanh toán hóa đơn ủy nhiệm</th>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="col20" style="padding-left:5px">
+                Chúng tôi cam kết hoàn toàn chịu trách nhiệm trước pháp luật về tính chính xác, trung thực của nội dung nêu trên và thực hiện theo đúng quy định của pháp luật./
+            </div>
+			<br><br>
+			<br><br>
+			<br><br>
+			<div class="pagebreak"> </div>
+            <div class="row">
+                <div class="col13">&nbsp;</div>
+                <div class="col6" style="padding-left:5px; text-align:center">
+                    ... ..., ngày ....... tháng .... năm ....
+                    <br> <b>NGƯỜI NỘP THUẾ</b>
+                    <br> <i>(Ký, ghi rõ họ tên và đóng dấu)</i>
+                </div>
+            </div>
+        </div>
+
+        <div id="containerToClone" class="container row page-container" style="display:none">
+        </div>
+
+        <table id='tableToClone' class="table table-bordered table-condensed" style="margin-top:0;display:none">
+            <tbody>
+            <tbody>
+        </table>
+
+    </div>
+
+
+
+    </div>
+    <script>
+        var hasElementBiggerThanContainer = false;
+
+        window.onload = function () {
+            var declarationType1 = "{DeclarationTypeID}" == "1" ? "Đăng ký mới" : "Thay đổi thông tin";
+            document.getElementById("declarationType1").innerText = declarationType1;
+
+            var declarationType2 = "{DeclarationTypeID}" == "1" ? "đăng ký" : "thay đổi";
+            document.getElementById("declarationType2").innerText = declarationType2;
+
+            var startContainer = document.getElementById("startContainer");
+            recursiveBreakPage(startContainer);
+        }
+
+        function recursiveBreakPage(containerEle) {
+            while (containerEle.scrollHeight > containerEle.clientHeight) {
+                var newContainer = document.getElementById("containerToClone").cloneNode(false);
+                newContainer.style.display = '';
+                containerEle.parentElement.appendChild(newContainer);
+
+                while (containerEle.scrollHeight > containerEle.clientHeight) {
+                    MoveLastChildToNewContainer(containerEle, newContainer);
+                }
+
+                if (hasElementBiggerThanContainer) {
+                    break;
+                }
+
+
+                containerEle = newContainer;
+            }
+        }
+
+        function MoveLastChildToNewContainer(oldContainer, newContainer) {
+            var lastChild_OldContainer = oldContainer.lastElementChild;
+
+            if (lastChild_OldContainer.tagName == 'TABLE') {
+                //Move last row to new table in new container
+                var rowElement = lastChild_OldContainer.lastElementChild;
+                while (rowElement && rowElement.tagName != 'TR') {
+                    rowElement = rowElement.lastElementChild;
+                }
+
+                if (!rowElement
+                    || rowElement.tagName != 'TR') {
+                    console.log(lastChild_OldContainer);
+                    throw "cannot find TR Element";
+                }
+
+                //Check if first child of new container is table
+                var firstEle_newContainer = newContainer.firstElementChild;
+                if (firstEle_newContainer.tagName != 'TABLE') {
+                    var clonedTableElement = document.getElementById("tableToClone").cloneNode(true);
+                    clonedTableElement.style.display = '';
+
+                    newContainer.prepend(clonedTableElement);
+                    firstEle_newContainer = newContainer.firstElementChild;
+                }
+
+                var tbodyElement = firstEle_newContainer.lastElementChild;
+                tbodyElement.prepend(rowElement.cloneNode(true));
+                rowElement.parentElement.removeChild(rowElement);
+
+                if (rowElement.scrollHeight > oldContainer.clientHeight)
+                    hasElementBiggerThanContainer = true;
+
+            }
+            else {
+                newContainer.prepend(lastChild_OldContainer.cloneNode(true));
+                oldContainer.removeChild(lastChild_OldContainer);
+
+                if (lastChild_OldContainer.scrollHeight > oldContainer.clientHeight)
+                    hasElementBiggerThanContainer = true;
+            }
+
+
+            //If
+        }
+
+    </script>
+
+
+</body>
+</html>
+
+

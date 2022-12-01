@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{04B1253D-FFF0-4B26-84C8-F36EB51C89A3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>InvoiceServer.Data</RootNamespace>
+    <AssemblyName>InvoiceServer.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.19.3.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess.EntityFramework, Version=6.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.EntityFramework.19.3.0\lib\net45\Oracle.ManagedDataAccess.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBAccessor\ANNOUNCEMENT.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\AUTONUMBERSETTING.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\CANCELLINGINVOICE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\CITY.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\CLIENT.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\CONFIGEMAILSERVER.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\CURRENCY.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\DataClasses.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\DataClasses.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\DataClasses.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\DataClassesDataContext.cs" />
+    <Compile Include="DBAccessor\DbContextManager.cs" />
+    <Compile Include="DBAccessor\DELETINGINVOICE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\EMAILACTIVE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\EMAILACTIVEFILEATTACH.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\EMAILACTIVEREFERENCE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\FUNCTION.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\GATEWAY_LOG.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\HISTORYREPORTGENERAL.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\HOLDINVOICE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\HOLDINVOICEDETAIL.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\IDbContext.cs" />
+    <Compile Include="DBAccessor\IMPORT_LOG.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\INVOICE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\INVOICEDECLARATION.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\INVOICEDECLARATIONRELEASE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\INVOICEDECLARATIONRELEASEREGISTERTYPE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\INVOICEDETAIL.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\INVOICEDETAIL_HIST.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\INVOICEGIFT.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\INVOICERELEAS.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\INVOICERELEASESDETAIL.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\INVOICERELEASESTEMPLATE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\INVOICEREPLACE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\INVOICESAMPLE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\INVOICESYSTEMSETTING.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\INVOICETEMPLATE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\INVOICETEMPLATESAMPLE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\INVOICETYPE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\INVOICE_HIST.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\JOB.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\KEYSTORE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\LASTKEY.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\LOGINUSER.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\MINVOICE_DATA.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\MYCOMPANY.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\MYCOMPANYUPGRADE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\MYCOMPANY_BK.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\NOTIFICATIONMINVOICE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\NOTIFICATIONUSEINVOICE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\NOTIFICATIONUSEINVOICEDETAIL.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\PRODUCT.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\QUARZTJOB.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\QUEUECREATEFILEINVOICE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\REGISTERTEMPLATE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\RELEASEANNOUNCEMENT.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\RELEASEANNOUNCEMENTDETAIL.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\RELEASEINVOICE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\RELEASEINVOICEDETAIL.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\REPORTCANCELLING.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\REPORTCANCELLINGDETAIL.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\ROLE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\ROLEFUNCTION.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\SEQUENCE_CONFIG.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\SERVERSIGNSETTING.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\SESSIONUPLOADEDTOKEN.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\SIGNATURE.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\SIGNDETAIL.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\SOFTVENDOR.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\STATISTICAL.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\SYMBOL.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\SYSTEMLOG.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\SYSTEMSETTING.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\TAX.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\TAXDEPARTMENT.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\TYPEPAYMENT.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\UNITLIST.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\USERLEVEL.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccessor\UV_GETFUNCTIONOFUSER.cs">
+      <DependentUpon>DataClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PartialClasses\EmailActive.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\DataConvertAttribute.cs" />
+    <Compile Include="Utils\DataObjectConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="DBAccessor\DataClasses.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DataClasses.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DBAccessor\DataClasses.edmx.diagram">
+      <DependentUpon>DataClasses.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DBAccessor\DataClasses.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DataClasses.edmx</DependentUpon>
+      <LastGenOutput>DataClasses.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DBAccessor\DataClasses.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DataClasses.edmx</DependentUpon>
+      <LastGenOutput>DataClasses.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>cd $(ProjectDir)RemoveSchemaName
+RemoveSchemaName.exe</PreBuildEvent>
+  </PropertyGroup>
+</Project>

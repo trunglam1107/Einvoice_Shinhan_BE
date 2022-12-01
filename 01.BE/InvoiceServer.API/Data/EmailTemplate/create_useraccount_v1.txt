@@ -1,0 +1,7 @@
+﻿Tài khoản D-QUOTE của bạn đã được tạo thành công
+
+<p>Yêu cầu tạo một tài khoản của bạn đã được xử lý. Để tiện cho bạn, thông tin tài khoản của bạn được hiển thị dưới đây:</p>
+<p>UserName: {Username}</p>
+<p>UserId: {UserId}</p>
+<p>Email: {Email}</p>
+<p>Password: {Password}</p>

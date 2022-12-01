@@ -1,0 +1,9 @@
+﻿Thông tin đăng nhập hệ thống 'Quản Trị Hóa Đơn Điện Tử'
+
+<p>Kính gửi Quý Đại Lý,</p>
+<p>Xin trân trọng cảm ơn Quý Đại Lý đã tin và hợp tác, triển khai hóa đơn điện tử cùng chúng tôi</p>
+<p>Thông tin tài khoản của quý đại lý : $CustomerName</p>
+<p>- Username (Tên đăng nhập): {UserId}</p>
+<p>- Password (Mật khẩu): {Password}</p>
+<p>Để có thể truy câp hệ thống  <a target="_blank" href="https://einvoice.unit.vn/#/{CompanyUrl}">https://einvoice.unit.vn/#/{CompanyUrl}</a></p>
+<p>Chúc quý đại lý luôn thành công .</p>
